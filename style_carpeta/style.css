@@ -1,85 +1,42 @@
-body{
+body {
     font-family:'Segoe UI', sans-serif;
     margin: 0;
     background-color: #F6EAC2;
     color: #3d3d3d;
 }
 
-.hero {
-    text-align: center;
-    margin: 30px auto;
+/* Hero Section */
+.text-success {
+    color: #5c745e !important;
 }
 
-.hero-img {
-    max-width: 90%;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-.hero-text {
-    margin-top: 10px;
-}
-
-.hero-text h2 {
-    color: #5c745e;
-    font-size: 1.8em;
-}
-
-.hero-text p {
-    color: #555;
-    font-size: 1em;
-}
-
-
-/**CARD**/
-
-.recommendation{
-    text-align: center;
-    margin: 40px 0;
-}
-
-/*box*/
-.pet_box{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
-    padding: 0 20px;
-}
-
-.pet_card{
-    background-color:#fffefb;
+/* Cards */
+.card {
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    padding: 15px;
-    width: 260px;
 }
 
-.pet_card img {
-    width: 100%;
+.card img {
     border-radius: 10px;
 }
 
-.pet_card h4 {
-    color: #3d3d3d;
-    margin: 10px 0 5px 0;
+/* Buttons */
+.btn-primary {
+    background-color: #D4A373;
+    border-color: #D4A373;
 }
 
-.pet_card p{
-    margin: 4px 0;
-    color: #555;
+.btn-primary:hover {
+    background-color: #b38c60;
+    border-color: #b38c60;
 }
 
-/*button*/
-.adopt_button{
-    display: inline-block;
-    background-color:#D4A373 ;
-    color: white;
-    padding: 8px 16px;
-    border-radius: 8px;
-    margin-top: 10px;
-    font-weight:500;
-    text-decoration: none;
+.btn-outline-secondary {
+    color: #D4A373;
+    border-color: #D4A373;
 }
 
+.btn-outline-secondary:hover {
+    background-color: #D4A373;
+    color: #fff;
+}
