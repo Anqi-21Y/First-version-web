@@ -1,11 +1,19 @@
-body{
-    font-family:'Segoe UI', sans-serif;
+body {
+    font-family: 'Segoe UI', sans-serif;
     margin: 0;
     background-color: #F6EAC2;
     color: #3d3d3d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+/* HERO */
 .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     margin: 30px auto;
 }
@@ -19,6 +27,9 @@ body{
 
 .hero-text {
     margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero-text h2 {
@@ -31,16 +42,17 @@ body{
     font-size: 1em;
 }
 
-
-/**CARD**/
-
-.recommendation{
+/* RECOMMENDATION */
+.recommendation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     margin: 40px 0;
 }
 
-/*box*/
-.pet_box{
+/* PET BOX */
+.pet_box {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -48,12 +60,16 @@ body{
     padding: 0 20px;
 }
 
-.pet_card{
-    background-color:#fffefb;
+/* PET CARD */
+.pet_card {
+    background-color: #fffefb;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     padding: 15px;
     width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .pet_card img {
@@ -64,22 +80,25 @@ body{
 .pet_card h4 {
     color: #3d3d3d;
     margin: 10px 0 5px 0;
+    text-align: center;
 }
 
-.pet_card p{
+.pet_card p {
     margin: 4px 0;
     color: #555;
+    text-align: center;
 }
 
-/*button*/
-.adopt_button{
-    display: inline-block;
-    background-color:#D4A373 ;
+/* BUTTON */
+.adopt_button {
+    display: inline-flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: #D4A373;
     color: white;
     padding: 8px 16px;
     border-radius: 8px;
     margin-top: 10px;
-    font-weight:500;
+    font-weight: 500;
     text-decoration: none;
 }
-
