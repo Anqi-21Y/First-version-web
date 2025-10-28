@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+body{
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color:#F6EAC2;
+    color:rgb(82, 68, 49);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/*guideline area*/
+.guidline{
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.guidline h2{
+    color: #A3C9A8;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.guid_block{
+    margin-bottom: 20px;
+}
+
+.guid_blok h3{
+     color:#D4A373;
+  margin-bottom: 8px;
+}
+
+.guid_blok ul{
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+.note{
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #6baa74;
+}
+
+/*form area*/
+.form_section{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow:0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form_section h2{
+    text-align: center;
+    color: #A3C9A8;
+    margin-bottom: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+label{
+    font-weight: bold;
+    color:rgb(82, 68, 49);
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"]{
+    padding: 8px;
+    border: 2px solid #A3C9A8;
+    width: 100%;
+}
+
+.radio_group{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+fieldset{
+    border: 2px solid rgb(202, 201, 124);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+legend{
+    color:#e5e786;
+    font-weight: bold;
+}
+
+.btn{
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #A3C9A8;
+    color: white;
+    border: none;/*Quitar el borde del botón*/
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1em;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #8FBF95;
+}

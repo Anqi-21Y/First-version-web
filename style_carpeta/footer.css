@@ -1,0 +1,15 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+footer {
+    text-align: center;
+    margin-top: 60px;
+    padding: 20px;
+    background-color: #A3C9A8;
+    color: white;
+    font-size: 0.9em;
+}

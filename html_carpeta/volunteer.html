@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer</title>
+    <link rel="stylesheet" href="../style_carpeta/volunteer.css">
+</head>
+<body>
+    <!--header-->
+    <iframe src="../html_carpeta/header.html" frameborder="0"
+    style="display: block; width: 100%;height: 130px; border: none; margin: 0; padding:0;"></iframe>
+
+    <main>
+        <!--schedule-->
+        <section>
+             <h2>Volunteer Activities Schedule</h2>
+
+            <table>
+                <caption>Weekly schedule of MeowWoof volunteer activities</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">DAY</th>
+                        <th scope="col">Activity</th>
+                        <th scope="col">Time</th>
+                        <th scope="col">Location</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="row">Monday</th>
+                        <td>Feeding and cleaning shelter</td>
+                        <td>10:00 - 12:00</td>
+                        <td>Main Shelter, Barcelona</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Wednesday</th>
+                        <td>Pet socialization & training</td>
+                        <td>15:00 - 18:00</td>
+                        <td>Training Park</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Friday</th>
+                        <td>Adoption event preparation</td>
+                        <td>14:00 - 18:00</td>
+                        <td>Event Center</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Sunday</th>
+                        <td>Adoption day & community outreach</td>
+                        <td>10:00 - 16:00</td>
+                        <td>Community Plaza</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!--form for volunteer under the schedule-->
+        <section class="form_section">
+            <h2>Volunteer</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Your Information</legend>
+                    <label for="name">Name : </label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="last_name">Last name : </label>
+                    <input type="text" id="last_name" name="last_name" required>
+
+                    <div class="radio-group">
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+
+                        <input type="radio" id="male" name="gender" value="man">
+                        <label for="male">Male</label>
+                    </div>
+
+                    <label for="age">Age : </label>
+                    <input type="number" id="age" name="age" min="0" required>
+
+                    <label for="email">Email : </label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="number">Number : </label>
+                    <input type="tel" id="number" name="number" required>
+
+                    <label for="experience">Do you have experience with pets:</label>
+                    <input type="text" id="experience" name="experience" required>
+
+                    <label for="day">Whitch day you wanna : </label>
+                    <input type="text" id="day" name="day" required>
+
+                </fieldset>
+
+                <button type="submit" class="btn">Submit</button>
+                <h5 class="note">If you become a volunteer, we will send you an email to notify you !</h5>
+            </form>
+        </section>
+
+    </main>
+
+    <!--footer-->
+    <iframe src="../html_carpeta/footer.html" frameborder="0"
+    style="display: block; width: 100%;height: 130px; border: none; margin: 0; padding:0;"></iframe>
+
+</body>
+</html>

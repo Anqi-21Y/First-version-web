@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt Form</title>
+    <link rel="stylesheet" href="../style_carpeta/adopt_form.css">
+</head>
+
+<body>
+    <!--header-->
+    <iframe src="../html_carpeta/header.html" frameborder="0"
+    style="display: block; width: 100%;height: 130px; border: none; margin: 0; padding:0;"></iframe>
+
+    <main>
+        <!--information for adopt-->
+        <section class="guidelines">
+            <h2>Adoption Guidelines</h2>
+            <div class="guid_block">
+                <h3>1. Before You Adopt</h3>
+                <p><strong>A long-term commitment</strong>  — Pets can live for 10–15 years or more. Are you ready to care for them for life?</p>
+                <p><strong>Time and attention</strong> — Do you have enough time each day to feed, clean, and spend time with your pet?</p>
+                <p><strong>Financial stability</strong> — Adoption includes costs for food, vet visits, vaccinations, supplies, and possible emergencies.</p>
+                <p><strong>Family environment</strong> — Does everyone in your home agree with the adoption? Is anyone allergic or against having pets?</p>
+                <p><strong>Housing conditions</strong> — Does your home or rental agreement allow pets? Is there enough safe space for them?</p>
+            </div>
+
+            <div class="guid_block">
+              <h3>2. Responsibilities of Adopters</h3>  
+              <ul>
+                <li>Provide a safe and healthy environment for your pet.</li>
+                <li>Ensure regular vaccinations and veterinary check-ups.</li>
+                <li>Never abandon or neglect your pet. If you can no longer care for them, contact the shelter or rescue group.</li>
+                <li>Do not use the pet for breeding or selling purposes.</li>
+                <li>Offer love, patience, and positive training, helping your pet feel secure and happy.</li>
+              </ul>
+            </div>
+
+            <div class="guid_block">
+              <h3>3. What We Hope From Our Adopters</h3>  
+              <ul>
+                <li>A strong sense of responsibility and willingness to learn.</li>
+                <li>Understanding that pets are family members, not toys.</li>
+                <li>Willingness to ask for help when facing behavioral or health problems.</li>
+              </ul>
+              
+            </div>
+
+            <div class="note">
+                <h5>🐾 Adoption is an act of love — but also a lifelong responsibility.</h5>
+            </div>
+        </section>
+
+        <!--form under the attencion about adopt-->
+        <section class="form_section">
+            <h2>Adoption Application Form</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Your Information</legend>
+                    <label for="name">Name : </label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label>Last name : </label>
+                    <input type="text" id="last_name" name="last_name" required>
+
+                    <div class="radio-group">
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                    </div>
+
+                    <label for="age">Age : </label>
+                    <input type="number" id="age" name="age" min="0" required>
+
+                    <label for="email">Email : </label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="number">Number : </label>
+                    <input type="tel" id="number" name="number" required>
+
+                    <label for="address">Address : </label>
+                    <input type="text" id="address" name="address" required>
+
+                    <label for="pet_name">Which one do you want to adopt (name): </label>
+                    <input type="text" id="pet_name" name="pet_name" required>
+                </fieldset>
+
+                <h5 class="note">Please make sure you have read and agreed to the above guidelines before submitting your application.</h5>
+                <button type="submit" class="btn">Submit Application</button>
+            </form>
+        </section>
+    </main>
+
+    <!--footer-->
+    <iframe src="../html_carpeta/footer.html" frameborder="0"
+    style="display: block; width: 100%;height: 130px; border: none; margin: 0; padding:0;"></iframe>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Poppins:wght@600;700&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#F6EAC2 ;
+    color: #333;
+    line-height: 1.6;
+}
+
+main{
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #D4A373;
+    margin-bottom: 20px;
+}
+
+/*table area*/
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto 50px auto;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+caption{
+    caption-side: top;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #D4A373;
+    background-color: #F6EAC2;
+    padding:10px ;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+th,td{
+    border: 1px solid #E4EFE7;
+    padding: 12px 10px;
+    text-align: center;
+}
+
+th{
+    background-color: #A3C9A8;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/*form area*/
+.form_section{
+    background-color: #fff;
+    border: 2px solid #A3C9A8;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow:0 3px 8px rgba(0, 0, 0, 0.08);
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+fieldset{
+    border: 2px solid #F6EAC2;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend{
+    font-family: 'Poppins', sans-serif;
+    color:#D4A373;
+    font-weight: 600;
+    padding: 0 10px;
+}
+
+label{
+    display: block;
+    margin-top: 15px;
+    font-weight: 500;
+    color: #444;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"]{
+    padding: 8px;
+    border: 2px solid #A3C9A8;
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input:focus{
+    border-color: #D4A373;
+    outline: none;
+}
+
+.radio_group{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.btn{
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #A3C9A8;
+    color: white;
+    border: none;/*Quitar el borde del botón*/
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1em;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #8FBF95;
+}
+
+.note{
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #6baa74;
+}
