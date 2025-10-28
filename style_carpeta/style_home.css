@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
 
-
 *{
     margin: 0;
     padding: 0;
@@ -15,57 +14,59 @@ body{
 }
 
 main{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 60px;
     max-width: 1100px;
     margin: 0 auto;
     padding: 40px 20px;
 }
 
+/* CONTAINER */
 .container{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     align-items: center;
-    justify-content: center;
+    justify-items: center;
     gap: 40px;
-    flex-wrap: wrap;
-    margin-bottom: 60px;
 }
 
-
 .container img {
-  width: 400px;
-  max-width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 400px;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .container .text {
-  flex: 1;
-  text-align: left;
+    text-align: left;
+    justify-self: start;
 }
 
-
 .container h2 {
-  font-size: 2em;
-  color: #A3C9A8;
+    font-size: 2em;
+    color: #A3C9A8;
 }
 
 .container p {
-  margin: 10px 0;
+    margin: 10px 0;
 }
 
-/*ABOUT AREA*/
+/* ABOUT AREA */
 .about{
-    margin-bottom: 60px;
+    display: grid;
+    row-gap: 15px;
     text-align: center;
 }
 
 .about h2{
     color: #A3C9A8;
-    margin-bottom: 15px;
 }
 
-/*STORY AREA*/
+/* STORY AREA */
 .stories{
-    margin-bottom: 60px;
+    display: grid;
+    row-gap: 20px;
     background-color: #f7f3c8;
     text-align: center;
     padding: 80px 20px;
@@ -74,7 +75,6 @@ main{
 
 .stories h2{
     color:#A3C9A8;
-    margin-bottom: 15px;
 }
 
 .stories p{
@@ -83,31 +83,26 @@ main{
 }
 
 .stories_container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 25px;
-    margin-bottom: 20px;
-    max-width: 100%;
+    width: 100%;
 }
 
 .story{
-    flex: 1 1 250px;
-    max-width: 300px;
     background-color:#fff7db;
     border-radius: 10px;
     padding: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    row-gap: 10px;
+    justify-items: center;
 }
 
 .story img{
     width: 100%;
     height: auto;
     border-radius: 10px;
-    margin-bottom: 10px;
 }
 
 .story p{
@@ -116,8 +111,10 @@ main{
     margin: 0;
 }
 
+/* BUTTONS */
 .btn {
-    display: inline-block;
+    display: inline-grid;
+    place-items: center;
     background-color: #A3C9A8;
     color: white;
     padding: 10px 20px;
@@ -128,6 +125,8 @@ main{
 }
 
 .btn-outline {
+  display: inline-grid;
+  place-items: center;
   background-color: white;
   color: #A3C9A8;
   border: 2px solid #A3C9A8;
