@@ -30,7 +30,7 @@ El repositorio contiene tres implementaciones independientes, cada una en su pro
 ## Vista previa / Preview
 La versión que se muestra finalmente es la **versión flex**.
 
-[Haz clic aquí para ver GitHub Pages]（)
+[Haz clic aquí para ver GitHub Pages]（https://carat-s.github.io/First-version-web/)
 
 > Nota: el Header y Footer se incluyen mediante iframe.
 
