@@ -10,6 +10,9 @@ header {
     background-color: #A3C9A8;
     padding:30px 0;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 h1 {
@@ -20,6 +23,9 @@ h1 {
 
 .nav_p{
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .nav_p a {
@@ -27,4 +33,69 @@ h1 {
     color: #ffffff;
     font-weight: 500;
     text-decoration: none;
+}
+
+/* button de hambur*/
+.menu_icon{
+  display: none; /* !!! No se muestra de forma predeterminada (versión para PC) */
+  font-size: 2em;
+  color: #ffffff;
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  cursor: pointer;
+}
+
+/* Muestra un icono de menú hamburguesa en dispositivos móviles y planeta */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .nav_p a {
+    margin: 0 8px;
+    font-size: 0.95em;
+  }
+
+  .menu_icon {
+    display: block;
+  }
+
+  /* nav secre */
+  .nav_p {
+    display: none;
+    flex-direction: column;
+    background-color: #A3C9A8;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    padding: 15px 0;
+  }
+
+  .nav_p.active {
+    display: flex;
+  }
+
+  .nav_p a {
+    display: block;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .menu_icon {
+    top: 20px;
+    right: 15px;
+    font-size: 1.8em;
+  }
+
+  .nav_p a {
+    font-size: 1em;
+    padding: 12px 0;
+  }
 }
