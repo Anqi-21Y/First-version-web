@@ -35,12 +35,12 @@ main{
     margin-bottom: 20px;
 }
 
-.guid_blok h3{
+.guid_block h3{
      color:#D4A373;
   margin-bottom: 8px;
 }
 
-.guid_blok ul{
+.guid_block ul{
     margin-left: 20px;
     list-style-type: disc;
 }
@@ -119,4 +119,74 @@ legend{
 
 .btn:hover{
     background-color: #8FBF95;
+}
+
+/*Diseño adaptable de tabletas*/
+@media (max-width: 768px) {
+  main {
+    padding: 30px 15px;
+  }
+
+  .guidline,
+  .form_section {
+    padding: 20px;
+  }
+
+  .guidline h2,
+  .form_section h2 {
+    font-size: 1.4em;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  input[type="tel"] {
+    font-size: 0.95em;
+  }
+
+  .radio_group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+/*Diseño adaptable de mobiles*/
+@media (max-width: 480px) {
+  main {
+    padding: 20px 10px;
+  }
+
+  .guidline {
+    padding: 15px;
+  }
+
+  .guidline h2 {
+    font-size: 1.2em;
+  }
+
+  .guid_block h3 {
+    font-size: 1em;
+  }
+
+  .form_section {
+    padding: 15px;
+  }
+
+  label {
+    font-size: 0.95em;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  input[type="tel"] {
+    padding: 6px;
+    font-size: 0.9em;
+  }
+
+  .btn {
+    font-size: 0.95em;
+    padding: 8px;
+  }
 }
