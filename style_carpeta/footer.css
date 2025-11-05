@@ -13,3 +13,19 @@ footer {
     color: white;
     font-size: 0.9em;
 }
+
+/*Diseño adaptable de tablestas*/
+@media (max-width: 768px) {
+  footer {
+    padding: 18px;
+    font-size: 0.85em;
+  }
+}
+
+/*Diseño adaptable de mobiles*/
+@media (max-width: 480px) {
+  footer {
+    padding: 15px;
+    font-size: 0.8em;
+  }
+}
