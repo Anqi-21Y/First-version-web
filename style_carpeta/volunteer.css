@@ -139,3 +139,72 @@ input:focus{
     font-weight: bold;
     color: #6baa74;
 }
+
+/*Diseño adaptable de tabletas*/
+@media (max-width: 768px) {
+  main {
+    padding: 20px;
+    margin: 30px 10px;
+  }
+
+  table {
+    font-size: 0.95em;
+  }
+
+  .form_section {
+    padding: 15px;
+  }
+
+  fieldset {
+    padding: 15px;
+  }
+
+  legend {
+    font-size: 1em;
+  }
+
+  .radio_group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/*Diseño adaptable de Mobiles*/
+@media (max-width: 480px) {
+  main {
+    padding: 15px 10px;
+    margin: 20px 5px;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+
+  caption {
+    font-size: 1em;
+  }
+
+  /*La tabla permite el desplazamiento horizontal en dispositivos móviles*/
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  th, td {
+    padding: 10px 8px;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  input[type="tel"] {
+    padding: 6px;
+    font-size: 0.9em;
+  }
+
+  .btn {
+    font-size: 0.9em;
+    padding: 8px;
+  }
+}
