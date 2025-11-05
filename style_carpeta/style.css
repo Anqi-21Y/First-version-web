@@ -10,23 +10,23 @@ body{
     margin: 30px auto;
 }
 
-.hero-img {
+.hero_img {
     max-width: 90%;
     height: auto;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-.hero-text {
+.hero_text {
     margin-top: 10px;
 }
 
-.hero-text h2 {
+.hero_text h2 {
     color: #5c745e;
     font-size: 1.8em;
 }
 
-.hero-text p {
+.hero_text p {
     color: #555;
     font-size: 1em;
 }
@@ -85,11 +85,11 @@ body{
 
 /*Diseño adaptable de tabletas*/
 @media (max-width: 768px) {
-  .hero-text h2 {
+  .hero_text h2 {
     font-size: 1.5em;
   }
 
-  .hero-text p {
+  .hero_text p {
     font-size: 0.95em;
   }
 
@@ -114,16 +114,16 @@ body{
     margin: 20px auto;
   }
 
-  .hero-img {
+  .hero_img {
     max-width: 100%;
     border-radius: 8px;
   }
 
-  .hero-text h2 {
+  .hero_text h2 {
     font-size: 1.3em;
   }
 
-  .hero-text p {
+  .her_text p {
     font-size: 0.9em;
   }
 
