@@ -50,8 +50,8 @@ git checkout version-bootstrap
 git checkout version-flex
 git checkout version-grid
 
-##Media Queries
-##Estrategia: Desktop First
+## Media Queries
+## Estrategia: Desktop First
 
 El diseño original fue creado para pantallas de ordenador, por lo que se aplicó la estrategia Desktop First.
 Desde los estilos base de escritorio, se añadieron Media Queries para adaptar la página a tabletas y móviles.
@@ -67,12 +67,12 @@ Tabletas: 481px – 768px → @media (max-width: 768px)
 
 Escritorio: 769px en adelante → estilos base
 
-##Menú hamburguesa
+## Menú hamburguesa
 
 En pantallas pequeñas se implementó un menú tipo hamburguesa que permite mostrar y ocultar la navegación.
 Basado en el ejemplo de W3Schools.
 
-##Estrategias adaptativas aplicadas
+## Estrategias adaptativas aplicadas
 
 Reorganización del layout: elementos en columna en móvil y en fila en escritorio.
 
