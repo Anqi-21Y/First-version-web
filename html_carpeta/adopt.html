@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¡MeowWoof!</title>
-    <link rel="stylesheet" href="../style_carpeta/style.css">
+    <link rel="stylesheet" href="../style_carpeta/Adopt.css">
 </head>
 
 <body>
@@ -17,7 +17,9 @@
     <main>
         <!--img and text-->
         <section class="hero"> 
-            <img src="../imag_carpeta/dog_cat_hug.jpg" alt="el foto del gato y perro" class="hero_img"> 
+            
+            <!--EJERCICIO 6.2-->
+            <div class="hero_img"></div>
         
             <div class="hero_text"> 
             <h2>Give Love a Home</h2> 
@@ -32,7 +34,27 @@
             <div class="pet_box">
 
                 <div class="pet_card">
-                    <img src="../imag_carpeta/cat_emilia.jpg" alt="Emilia">
+                    <!-- EJERCICIO 6.3
+                    He elegido la etiqueta <picture> porque permite cargar imágenes diferentes
+                    según el tamaño del dispositivo y optimiza el rendimiento（Pero todos son img iguals）. -->
+
+                     <picture>
+                        <!-- Desktop -->
+                        <source media="(min-width: 1025px)" srcset="../imag_carpeta/cat_emilia.jpg">
+
+                        <!-- Tablet -->
+                        <source media="(min-width: 601px)" srcset="../imag_carpeta/cat_emilia.jpg">
+
+                        <!-- Móvil -->
+                        <source media="(max-width: 600px)" srcset="../imag_carpeta/cat_emilia.jpg">
+                        
+                        <!--Normal-->
+                        <img src="../imag_carpeta/cat_emilia.jpg" alt="Emilia">
+                     </picture>
+                    
+                    
+
+
                     <h4>Name: Emilia </h4>
                     <p>Gender: Girl</p>
                     <p>Age: 1 year old</p> 
