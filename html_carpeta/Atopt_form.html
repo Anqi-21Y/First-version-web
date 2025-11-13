@@ -96,5 +96,13 @@
     <iframe src="../html_carpeta/footer.html" frameborder="0"
     style="display: block; width: 100%;height: 130px; border: none; margin: 0; padding:0;"></iframe>
 
+    <script>
+        window.addEventListener('message', (event) => {
+            if (event.data && event.data.type === 'resizeHeader') {
+                
+                document.querySelector('iframe[src*="header.html"]').style.height = event.data.height + 'px';
+            }
+        });
+    </script>
 </body>
 </html>
