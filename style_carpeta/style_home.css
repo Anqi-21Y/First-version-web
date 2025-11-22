@@ -370,7 +370,7 @@ p {
 
 /* CALL TO ACTION ----------------------------------------------- */
 section.cta {
-  background: linear-gradient(135deg, var(--primary-light), var(--primary));
+  background: linear-gradient(135deg, #8cdbbd,#e8f3e5,#b0e69a );
   color: white;
   padding: 80px 20px;
   border-radius: var(--radius-section);
@@ -393,7 +393,7 @@ section.cta h3 {
 }
 
 .btn {
-  background: var(--primary);
+  background: #8cdbbd;;
   color: white;
   padding: 15px 35px;
   box-shadow: var(--shadow-md);

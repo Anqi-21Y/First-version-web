@@ -1,3 +1,26 @@
+/* ROOT VARIABLES -------------------------------------------------- */
+:root {
+  --primary: #7AC7A9;
+  --primary-light: #4BAF8E;
+  --primary-dark: #5DAF94;
+  --secondary: #F6EAC2;
+  --background: #FFF9F0;
+  --text-dark: #37474F;
+  --accent: #D4A373;
+  --white: #ffffff;
+
+  --adopt-bg: #e8f3e5;
+  --volunteer-bg: #f8f8f8;
+  --stories-bg: #f7f3c8;
+  --story-card-bg: #fff7db;
+
+  --radius-section: 12px;
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.12);
+  --shadow-lg: 0 8px 24px rgba(122,199,169,0.25);
+  --transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
 /* EJERCICIO 6.1
 Esta regla asegura que todas las imágenes y vídeos se adapten al tamaño del contenedor sin deformarse. */
 img, video {
@@ -7,15 +30,16 @@ img, video {
 }
 
 body{
-    font-family:'Segoe UI', sans-serif;
-    margin: 0;
-    background-color: #F6EAC2;
-    color: #3d3d3d;
+  font-family:'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: var(--background);
+  color: var(--text-dark);
 }
 
 .hero {
-    text-align: center;
-    margin: 30px auto;
+  position: relative;
+  text-align: center;
+  margin: 30px auto;
 }
 
 
@@ -23,90 +47,109 @@ body{
 Convertimos la imagen decorativa en un fondo CSS.
 He elegido background-size: cover porque llena el espacio sin deformar la imagen. */
 .hero_img {
-    max-width: 90%;
-    height: 300px;
-    margin: 0 auto;
-    border-radius: 12px;
-    background-image: url("../imag_carpeta/dog_cat_hug.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
+  max-width: 90%;
+  height: 300px;
+  margin: 0 auto;
+  border-radius: var(--radius-section);
+  background-image: url("../imag_carpeta/dog_running.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
 
-    /* EJERCICIO 6.2  
-    He elegido la opción "cover" porque con "contain" quedaban espacios vacíos a los lados y se veía raro.  
-    Con "cover", la imagen se amplía un poco, pero se adapta perfectamente al diseño de la página.  
-    El valor "100% 100%" muestra un resultado parecido, pero "cover" me resulta más práctico y natural.  
-    */
-    background-size: cover;
-    /* background-size: contain; */
-    /* background-size: 100% 100%; */
-
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  /* EJERCICIO 6.2  
+  He elegido la opción "cover" porque con "contain" quedaban espacios vacíos a los lados y se veía raro.  
+  Con "cover", la imagen se amplía un poco, pero se adapta perfectamente al diseño de la página.  
+  El valor "100% 100%" muestra un resultado parecido, pero "cover" me resulta más práctico y natural.  
+  */
+  background-size: cover;
+  /* background-size: contain; */
+  /* background-size: 100% 100%; */
+  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-md);
+  position: relative;
 }
 
 .hero_text {
-    margin-top: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: var(--white);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  width: 80%;
 }
 
 .hero_text h2 {
-    color: #5c745e;
-    font-size: 1.8em;
-}
-
-.hero_text p {
-    color: #555;
-    font-size: 1em;
+  color: var(--white);
+  font-size: 2.1em;
 }
 
 
 /**CARD**/
 
 .recommendation{
-    text-align: center;
-    margin: 40px 0;
+  text-align: center;
+  margin: 30px auto;
+  max-width: 1800px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin-bottom: 100px;
+  margin-top: 100px;
 }
 
 /*box*/
 .pet_box{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
-    padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 0 50px;
 }
 
 .pet_card{
-    background-color:#fffefb;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    padding: 15px;
-    width: 260px;
+  background-color: var(--white);
+  border-radius: 15px;
+  box-shadow: var(--shadow-sm);
+  padding: 15px;
+  width: 260px;
+  transition: var(--transition);
+}
+
+.pet_card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
 }
 
 .pet_card img {
-    width: 100%;
-    border-radius: 10px;
+  width: 100%;
+  border-radius: 10px;
 }
 
 .pet_card h4 {
-    color: #3d3d3d;
-    margin: 10px 0 5px 0;
+  color: var(--text-dark);
+  margin: 10px 0 5px 0;
 }
 
 .pet_card p{
-    margin: 4px 0;
-    color: #555;
+  margin: 4px 0;
+  color: var(--text-dark);
 }
 
 /*button*/
 .adopt_button{
-    display: inline-block;
-    background-color:#D4A373 ;
-    color: white;
-    padding: 8px 16px;
-    border-radius: 8px;
-    margin-top: 10px;
-    font-weight:500;
-    text-decoration: none;
+  display: inline-block;
+  background-color: var(--accent);
+  color: var(--white);
+  padding: 8px 16px;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.adopt_button:hover {
+  background-color: var(--primary-light);
+  transform: scale(1.05);
 }
 
 /*Diseño adaptable de tabletas*/
