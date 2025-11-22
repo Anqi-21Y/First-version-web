@@ -1,3 +1,29 @@
+/* GOOGLE FONTS ---------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600;700&display=swap');
+
+/* ROOT VARIABLES -------------------------------------------------- */
+:root {
+  --primary: #7AC7A9;
+  --primary-light: #4BAF8E;
+  --primary-dark: #5DAF94;
+  --secondary: #F6EAC2;
+  --background: #FFF9F0;
+  --text-dark: #37474F;
+  --accent: #D4A373;
+  --white: #ffffff;
+
+  --adopt-bg: #e8f3e5;
+  --volunteer-bg: #f8f8f8;
+  --stories-bg: #f7f3c8;
+  --story-card-bg: #fff7db;
+
+  --radius-section: 12px;
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.12);
+  --shadow-lg: 0 8px 24px rgba(122,199,169,0.25);
+  --transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -5,8 +31,9 @@ html, body {
   overflow: hidden;
 }
 
+/* HEADER */
 header {
-  background-color: #A3C9A8;
+  background-color: var(--primary); /* #7AC7A9 */
   padding: 10px 20px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   position: sticky;
@@ -21,15 +48,15 @@ header {
   position: relative;
 }
 
-/*left logo-------------------------*/
-.logo_container{
+/* left Logo */
+.logo_container {
   position: absolute;
   left: 20px;
   display: flex;
   align-items: center;
 }
 
-.logo_image{
+.logo_image {
   width: 80px;
   height: 80px;
   object-fit: cover;
@@ -41,14 +68,14 @@ header {
   flex-direction: column;
   align-items: center;
 }
-    
 
 h1 {
-  color: #ffffff;
+  color: var(--white);
   font-size: 2em;
   margin: 0;
 }
 
+/* NAVIGATION */
 .nav_p {
   margin-top: 10px;
   display: flex;
@@ -58,24 +85,29 @@ h1 {
 
 .nav_p a {
   margin: 0 16px;
-  color: #ffffff;
+  color: var(--white);
   font-weight: 600;
   font-size: 1.1em;
   text-decoration: none;
+  transition: var(--transition);
 }
 
-/* button menu */
+.nav_p a:hover {
+  color: var(--accent); /* #D4A373 */
+}
+
+/* Hamburger */
 .menu_icon {
   display: none;
   font-size: 2em;
-  color: #ffffff;
+  color: var(--white);
   cursor: pointer;
   position: absolute;
   right: 20px;
   top: 25px;
 }
 
-/* Muestra un icono de menú hamburguesa en dispositivos móviles y planeta */
+/* Mobile */
 @media (max-width: 768px) {
   h1 {
     font-size: 1.8em;
@@ -90,11 +122,10 @@ h1 {
     display: block;
   }
 
-  /* nav secre */
   .nav_p {
     display: none;
     flex-direction: column;
-    background-color: #A3C9A8;
+    background-color: var(--primary-light); /* #4BAF8E */
     width: 100%;
     position: relative;
     top: 20px;
@@ -112,6 +143,7 @@ h1 {
   }
 }
 
+/* Smaller devices */
 @media (max-width: 480px) {
   h1 {
     font-size: 1.5em;
