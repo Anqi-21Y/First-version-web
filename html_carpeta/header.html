@@ -1,17 +1,28 @@
 <link rel="stylesheet" href="../style_carpeta/header.css">
 
 <header class="header">
-    <h1>¡MeowWoof!</h1>
+<div class="header_content">
 
-    <!-- button hambur -->
-     <div class="menu_icon" id="menuIcon">☰</div>
+        <!-- logo img left -->
+         <div class="logo_container">
+            <img src="../imag_carpeta/logo.png" alt="MeowWoof logo" class="logo_image">
+        </div>
+        
+        <!-- logo y nav -->
+        <div class="center_container">
+            <h1>¡MeowWoof!</h1>
+            <nav class="nav_p" id="navLinks">
+                <a href="../html_carpeta/index.html" target="_top">Home</a>
+                <a href="../html_carpeta/adopt.html" target="_top">Adopt</a>
+                <a href="../html_carpeta/volunteer.html" target="_top">Voluntario</a>
+                <a href="../html_carpeta/contact.html" target="_top">Contact</a>
+            </nav>
+        </div>
 
-    <nav class="nav_p" id="navLinks">
-        <a href="../html_carpeta/index.html" target="_top">Home</a>&nbsp;
-        <a href="../html_carpeta/adopt.html" target="_top">Adopt</a>&nbsp;
-        <a href="../html_carpeta/volunteer.html" target="_top">Voluntario</a>&nbsp;
-        <a href="../html_carpeta/contact.html" target="_top">Contact</a>
-    </nav>
+        <!-- button hamburguesa -->
+        <div class="menu_icon" id="menuIcon">☰</div>
+    </div>
+
 
     <script>
         const menuIcon = document.getElementById('menuIcon');
