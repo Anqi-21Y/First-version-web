@@ -253,7 +253,8 @@ p {
 
 /* PET CARDS ----------------------------------------------------- */
 .card_container {
-  display: grid; 
+  display: flex;
+  flex-wrap: wrap; 
   gap: 35px; 
   max-width: 1200px; 
   margin: 40px auto 0; 
@@ -326,7 +327,8 @@ p {
 }
 
 .stories_container {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   gap: 35px;
   max-width: 1200px;
   margin: 40px auto 0;
