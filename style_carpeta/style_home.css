@@ -168,7 +168,7 @@ p {
   position: relative;
   width: 100%;
   min-height: 500px;
-  color: white;
+  color: var(--white);
   border-radius: var(--radius-section);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
