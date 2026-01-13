@@ -85,6 +85,38 @@ He elegido background-size: cover porque llena el espacio sin deformar la imagen
   font-size: 2.1em;
 }
 
+/* ------------AUDIO ICON EN HERO -------------*/
+
+#audio-controls {
+  position: absolute;
+  bottom: 18px;
+  right: 18px;
+  z-index: 5;
+}
+
+#audio-controls button {
+  background: rgba(255, 255, 255, 0.25);
+  border: none;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+#audio-controls button:hover {
+  background: rgba(255, 255, 255, 0.45);
+  transform: scale(1.1);
+}
+
+#audio-controls i {
+  font-size: 18px;
+  color: var(--white);
+  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+
 
 /**CARD**/
 
