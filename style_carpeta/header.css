@@ -164,6 +164,10 @@ h1 {
   }
 }
 
+/* Elegí una animación sencilla de desvanecimiento y 
+ligero escalado para que el logo aparezca de forma suave al cargar la página, 
+llame la atención del usuario sin ser molesto y refleje la identidad visual de la web. */
+
 @keyframes logoAnimation {
   0% {
     opacity: 0;
@@ -179,3 +183,4 @@ h1 {
     transform: scale(1);
   }
 }
+
