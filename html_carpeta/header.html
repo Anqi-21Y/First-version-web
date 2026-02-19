@@ -26,27 +26,6 @@
     </div>
 
 
-    <script>
-        const menuIcon = document.getElementById('menuIcon');
-        const navLinks = document.getElementById('navLinks');
-
-        function updateParentHeight() {
-        const headerHeight = document.querySelector('header').offsetHeight;
-        window.parent.postMessage({
-            type: 'resizeHeader',
-            height: headerHeight
-        }, '*');
-        }
-
-        // clic menu de hambur
-        menuIcon.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-        updateParentHeight();
-        });
-
-        // final loading volver a 130
-        window.addEventListener('load', updateParentHeight);
-    </script>
-
 
 </header>
+<script src="../js/script.js"></script>

@@ -12,6 +12,7 @@
 
 </head>
 
+<script src="../js/script.js"></script>
 <body>
     <!--header-->
 
@@ -39,33 +40,14 @@
             <!--invisible elemento de audio-->
 
             <audio id="my_audio">
-                <source src="../cute-ukulele-joyful-cute-music_final.mp3" type="audio/mpeg">
-                <source src="../cute-ukulele-joyful-cute-music-ogg.ogg" type="audio/ogg">
+                <source src="../audio/cute-ukulele-joyful-cute-music_final.mp3" type="audio/mpeg">
+                <source src="../audio/cute-ukulele-joyful-cute-music-ogg.ogg" type="audio/ogg">
                 Your browser does not support the audio element.
             </audio>
 
         </div> 
         </section>
     
-
-        <!--para contrar-->
-        <script>
-            const audio = document.getElementById("my_audio");
-            const button = document.getElementById("audio_btn");
-            const icon = document.getElementById("audio_icon");
-
-            button.addEventListener("click", () => {
-                if (audio.paused) {
-                    audio.play();
-                    icon.classList.remove("fa-volume-xmark");
-                    icon.classList.add("fa-volume-high");
-                } else {
-                    audio.pause();
-                    icon.classList.remove("fa-volume-high");
-                    icon.classList.add("fa-volume-xmark");
-                }
-            });
-        </script>
 
 
 
@@ -193,13 +175,5 @@
     <iframe src="../html_carpeta/footer.html" frameborder="0"
     style="display: block; width: 100%;height: 500px; border: none; margin: 0; padding:0;"></iframe>
 
-    <script>
-        window.addEventListener('message', (event) => {
-            if (event.data && event.data.type === 'resizeHeader') {
-                
-                document.querySelector('iframe[src*="header.html"]').style.height = event.data.height + 'px';
-            }
-        });
-    </script>
 </body>
 </html>

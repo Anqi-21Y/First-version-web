@@ -8,6 +8,9 @@
     <link rel="icon" href="../imag_carpeta/logo.png" type="image/png">
 
 </head>
+
+<script src="../js/script.js"></script>
+
 <body>
     <!-- Header -->
     <iframe id="headerFrame" src="../html_carpeta/header.html" frameborder="0"
@@ -163,12 +166,6 @@
     <iframe src="../html_carpeta/footer.html" frameborder="0"
     style="display: block; width: 100%;height: 500px; border: none; margin: 0; padding:0;"></iframe>
 
-    <script>
-        window.addEventListener('message', (event) => {
-            if (event.data && event.data.type === 'resizeHeader') {
-                document.getElementById('headerFrame').style.height = event.data.height + 'px';
-            }
-        });
-    </script>
+
 </body>
 </html>
