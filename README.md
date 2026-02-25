@@ -90,7 +90,7 @@ Todo el código JavaScript ha sido implementado en un fichero separado:
 
 No se ha utilizado JavaScript inline en el HTML.
 
-##Misión 1 – Selección de Elementos
+## Misión 1 – Selección de Elementos
 
 Se han aplicado cambios visuales automáticos al cargar la página utilizando distintos tipos de selectores jQuery:
 
