@@ -196,6 +196,92 @@ Se emplean selectores variados para demostrar dominio del DOM.
 
 Las animaciones y eventos tienen sentido dentro del contexto de adopción y voluntariado.
 
+## Práctica 8 – Selector de Idioma (M06)
+
+### Objetivo
+
+En esta práctica se ha implementado un **selector de idioma trilingüe** para la landing page de **MeowWoof**.
+
+El objetivo es permitir que el usuario pueda visualizar el contenido de la página en **Catalán, Castellano o Inglés**, mejorando la accesibilidad y la experiencia de usuario.
+
+El sistema permite **cambiar el idioma dinámicamente sin recargar la página** y guardar la preferencia del usuario para futuras visitas.
+
+---
+
+### Selector de Idiomas
+
+Se ha añadido un contenedor en la página principal con **tres botones de selección de idioma**.
+
+Cada botón utiliza el atributo personalizado **`data-lang`** para identificar el idioma seleccionado.
+
+```html
+<div id="selector-idiomas">
+    <button data-lang="ca">CA</button>
+    <button data-lang="es">ES</button>
+    <button data-lang="en">EN</button>
+</div>
+
+Cuando el usuario hace clic en uno de los botones, se ejecuta una función JavaScript que actualiza el contenido de la página.
+
+### Diccionario de Traducciones
+
+Las traducciones se gestionan mediante un objeto JavaScript que funciona como diccionario.
+
+Cada clave del objeto corresponde al id de un elemento HTML que debe ser traducido.
+
+Ejemplo simplificado:
+
+const translations = {
+    "hero-h2": {
+        ca: "Benvinguts a MeowWoof !!",
+        es: "¡Bienvenidos a MeowWoof !!",
+        en: "Welcome to MeowWoof !!"
+    }
+};
+
+Este sistema permite organizar todas las traducciones en un único lugar y facilita la ampliación del proyecto en el futuro.
+
+### Manipulación del DOM
+
+Cuando se selecciona un idioma, el script recorre el diccionario de traducciones y actualiza el contenido de cada elemento utilizando:
+
+document.getElementById(id).innerHTML
+
+Gracias a este proceso, se traducen dinámicamente distintas secciones de la página, como:
+
+Hero Section
+
+About Us
+
+Volunteer Section
+
+Adoption Section
+
+Stories
+
+Call to Action
+
+### Persistencia con localStorage
+
+Para mejorar la experiencia del usuario, la preferencia de idioma se guarda utilizando localStorage.
+
+De esta forma, cuando el usuario vuelve a visitar la página, el idioma seleccionado anteriormente se aplica automáticamente.
+
+Ejemplo:
+
+localStorage.setItem("userLang", lang);
+
+Al cargar la página, el script comprueba si existe una preferencia guardada y aplica ese idioma.
+
+### Compatibilidad con iframes
+
+El proyecto mantiene la estructura original donde Header y Footer se incluyen mediante iframe.
+
+Para permitir que estos elementos también se traduzcan, el script accede al contenido del iframe una vez cargado y modifica los textos correspondientes.
+
+De esta manera se conserva la arquitectura original del proyecto sin alterar la estructura base del HTML.
+
+
 ## Resultado
 
 La página ahora no solo es adaptativa y visualmente coherente, sino también interactiva y dinámica, mejorando la experiencia del usuario y cumpliendo los requisitos de la Unidad 4.
