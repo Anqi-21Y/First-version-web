@@ -223,6 +223,9 @@ Cada botón utiliza el atributo personalizado **`data-lang`** para identificar e
 
 Cuando el usuario hace clic en uno de los botones, se ejecuta una función JavaScript que actualiza el contenido de la página.
 
+```
+---
+
 ### Diccionario de Traducciones
 
 Las traducciones se gestionan mediante un objeto JavaScript que funciona como diccionario.
