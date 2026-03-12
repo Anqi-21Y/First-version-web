@@ -38,6 +38,67 @@ main{
   box-shadow:var(--shadow-md);
 }
 
+/* LANGUAGE SELECTOR ------------------------------------------------ */
+
+#selector-idiomas{
+    position: fixed;
+    top: 90px;
+    right: 30px;
+    font-family: 'Poppins', sans-serif;
+    z-index: 999;
+}
+
+/* Idioma actual */
+
+.lang-selected{
+    background: var(--white);
+    color: var(--text-dark);
+    padding: 8px 16px;
+    border-radius: var(--radius-section);
+    cursor: pointer;
+    box-shadow: var(--shadow-sm);
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.lang-selected:hover{
+    box-shadow: var(--shadow-md);
+}
+
+/* Menú desplegable */
+
+.lang-options{
+    display: none;
+    flex-direction: column;
+    margin-top: 6px;
+    background: var(--white);
+    border-radius: var(--radius-section);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+}
+
+/* hover abrir */
+
+#selector-idiomas:hover .lang-options{
+    display: flex;
+}
+
+/* cada boton */
+
+.lang-options button{
+    border: none;
+    background: transparent;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--text-dark);
+    transition: var(--transition);
+}
+
+.lang-options button:hover{
+    background: var(--secondary);
+}
+
 h2{
   font-family:'Poppins', sans-serif;
   text-align:center;

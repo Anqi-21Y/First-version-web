@@ -802,8 +802,19 @@ $(document).ready(function () {
     const savedLang = localStorage.getItem("lang");
 
     if(savedLang){
+        $(".lang-selected").text(savedLang.toUpperCase() + " ▾");
         $("#selector-idiomas button[data-lang='" + savedLang + "']").click();
     }
+
+    $("#selector-idiomas button").click(function () {
+
+    const lang = $(this).data("lang");
+
+    $(".lang-selected").text(lang.toUpperCase() + " ▾"); // Actual idioma
+
+    localStorage.setItem("lang", lang);
+
+    });
 
 });
 
