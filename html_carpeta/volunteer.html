@@ -10,97 +10,113 @@
 
 <body>
     <!--header-->
-    <iframe src="../html_carpeta/header.html" frameborder="0"
+    <iframe id="headerFrame" src="../html_carpeta/header.html" frameborder="0"
     style="display: block; width: 100%;height: 130px; border: none; margin: 0; padding:0;"></iframe>
 
+    <div id="selector-idiomas">
+        <button data-lang="ca">CA</button>
+        <button data-lang="es">ES</button>
+        <button data-lang="en">EN</button>
+    </div>
+    
     <main>
         <!--schedule-->
         <section>
-             <h2>Volunteer Activities Schedule</h2>
+            <h2 id="vol-schedule-title">Volunteer Activities Schedule</h2>
 
             <table>
-                <caption>Weekly schedule of MeowWoof volunteer activities</caption>
+                <caption id="vol-caption">Weekly schedule of MeowWoof volunteer activities</caption>
 
                 <thead>
                     <tr>
-                        <th scope="col">DAY</th>
-                        <th scope="col">Activity</th>
-                        <th scope="col">Time</th>
-                        <th scope="col">Location</th>
+                        <th scope="col" id="vol-day">DAY</th>
+                        <th scope="col" id="vol-activity">Activity</th>
+                        <th scope="col" id="vol-time">Time</th>
+                        <th scope="col" id="vol-location">Location</th>
                     </tr>
                 </thead>
 
                 <tbody>
                     <tr>
-                        <th scope="row">Monday</th>
-                        <td>Feeding and cleaning shelter</td>
+                        <th scope="row" id="vol-mon">Monday</th>
+                        <td id="vol-mon-act">Feeding and cleaning shelter</td>
                         <td>10:00 - 12:00</td>
-                        <td>Main Shelter, Barcelona</td>
+                        <td id="vol-mon-loc">Main Shelter, Barcelona</td>
                     </tr>
 
                     <tr>
-                        <th scope="row">Wednesday</th>
-                        <td>Pet socialization & training</td>
+                        <th scope="row" id="vol-wed">Wednesday</th>
+                        <td id="vol-wed-act">Pet socialization & training</td>
                         <td>15:00 - 18:00</td>
-                        <td>Training Park</td>
+                        <td id="vol-wed-loc">Training Park</td>
                     </tr>
 
                     <tr>
-                        <th scope="row">Friday</th>
-                        <td>Adoption event preparation</td>
+                        <th scope="row" id="vol-fri">Friday</th>
+                        <td id="vol-fri-act">Adoption event preparation</td>
                         <td>14:00 - 18:00</td>
-                        <td>Event Center</td>
+                        <td id="vol-fri-loc">Event Center</td>
                     </tr>
 
                     <tr>
-                        <th scope="row">Sunday</th>
-                        <td>Adoption day & community outreach</td>
+                        <th scope="row" id="vol-sun">Sunday</th>
+                        <td id="vol-sun-act">Adoption day & community outreach</td>
                         <td>10:00 - 16:00</td>
-                        <td>Community Plaza</td>
+                        <td id="vol-sun-loc">Community Plaza</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
-        <!--form for volunteer under the schedule-->
+
         <section class="form_section">
-            <h2>Volunteer</h2>
+            <h2 id="vol-form-title">Volunteer</h2>
+
             <form action="#" method="post">
+
                 <fieldset>
-                    <legend>Your Information</legend>
-                    <label for="name">Name : </label>
+
+                    <legend id="vol-legend">Your Information</legend>
+
+                    <label for="name" id="vol-label-name">Name :</label>
                     <input type="text" id="name" name="name" required>
 
-                    <label for="last_name">Last name : </label>
+                    <label for="last_name" id="vol-label-last">Last name :</label>
                     <input type="text" id="last_name" name="last_name" required>
 
                     <div class="radio-group">
+
                         <input type="radio" id="female" name="gender" value="female">
-                        <label for="female">Female</label>
+                        <label for="female" id="vol-label-female">Female</label>
 
                         <input type="radio" id="male" name="gender" value="man">
-                        <label for="male">Male</label>
+                        <label for="male" id="vol-label-male">Male</label>
+
                     </div>
 
-                    <label for="age">Age : </label>
+                    <label for="age" id="vol-label-age">Age :</label>
                     <input type="number" id="age" name="age" min="0" required>
 
-                    <label for="email">Email : </label>
+                    <label for="email" id="vol-label-email">Email :</label>
                     <input type="email" id="email" name="email" required>
 
-                    <label for="number">Number : </label>
+                    <label for="number" id="vol-label-number">Number :</label>
                     <input type="tel" id="number" name="number" required>
 
-                    <label for="experience">Do you have experience with pets:</label>
+                    <label for="experience" id="vol-label-exp">Do you have experience with pets:</label>
                     <input type="text" id="experience" name="experience" required>
 
-                    <label for="day">Whitch day you wanna : </label>
+                    <label for="day" id="vol-label-day">Which day you want :</label>
                     <input type="text" id="day" name="day" required>
 
                 </fieldset>
 
-                <button type="submit" class="btn">Submit</button>
-                <h5 class="note">If you become a volunteer, we will send you an email to notify you !</h5>
+                <button type="submit" class="btn" id="vol-submit">Submit</button>
+
+                <h5 class="note" id="vol-note">
+                    If you become a volunteer, we will send you an email to notify you !
+                </h5>
+
             </form>
         </section>
 
@@ -110,6 +126,7 @@
     <iframe src="../html_carpeta/footer.html" frameborder="0"
     style="display: block; width: 100%;height: 500px; border: none; margin: 0; padding:0;"></iframe>
 
-    <script src="../js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../JS/script.js"></script>
 </body>
 </html>

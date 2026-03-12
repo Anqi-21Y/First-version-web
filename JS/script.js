@@ -147,7 +147,160 @@ $(document).ready(function () {
             "footer-copy": "© 2025 MeowWoof! | Made with love 🐾",
             "footer-privacy": "Privacy Policy",
             "footer-terms": "Terms & Conditions",
-            "footer-cookies": "Cookies"
+            "footer-cookies": "Cookies",
+
+            "adopt-hero-title": "Give Love a Home",
+            "adopt-title": "OUR LOVELY FRIENDS",
+
+            "petA-name": "Name: Emilia",
+            "petA-gender": "Gender: Girl",
+            "petA-age": "Age: 1 year old",
+            "petA-character": "Character: Considerate",
+            "petA-adopt": "Adopt",
+
+            "petB-name": "Name: Lily",
+            "petB-gender": "Gender: Girl",
+            "petB-age": "Age: 5 months",
+            "petB-character": "Character: Energetic",
+            "petB-adopt": "Adopt",
+
+            "petC-name": "Name: Molly",
+            "petC-gender": "Gender: Girl",
+            "petC-age": "Age: 3 years old",
+            "petC-character": "Character: Reliable",
+            "petC-adopt": "Adopt",
+
+            "petD-name": "Name: Princes",
+            "petD-gender": "Gender: Girl",
+            "petD-age": "Age: 3 years old",
+            "petD-character": "Character: Enthusiastic",
+            "petD-adopt": "Adopt",
+
+            "petE-name": "Name: Coco",
+            "petE-gender": "Gender: Boy",
+            "petE-age": "Age: 3 months",
+            "petE-character": "Character: Bubbly",
+            "petE-adopt": "Adopt",
+
+            "petF-name": "Name: DJ",
+            "petF-gender": "Gender: Boy",
+            "petF-age": "Age: 1 year old",
+            "petF-character": "Character: Resourceful",
+            "petF-adopt": "Adopt",
+
+            "petG-name": "Name: Jungle",
+            "petG-gender": "Gender: Girl",
+            "petG-age": "Age: 7 months",
+            "petG-character": "Character: Reticent",
+            "petG-adopt": "Adopt",
+
+            "petH-name": "Name: Holiday",
+            "petH-gender": "Gender: Boy",
+            "petH-age": "Age: 5 months",
+            "petH-character": "Character: Outgoing",
+            "petH-adopt": "Adopt",
+
+            "petI-name": "Name: Mimi",
+            "petI-gender": "Gender: Girl",
+            "petI-age": "Age: 7 months",
+            "petI-character": "Character: Sociable",
+            "petI-adopt": "Adopt",
+
+            "petJ-name": "Name: Simba",
+            "petJ-gender": "Gender: Boy",
+            "petJ-age": "Age: 2 years old",
+            "petJ-character": "Character: Approachable",
+            "petJ-adopt": "Adopt",
+
+            "form-guidelines-title": "Adoption Guidelines",
+            "form-before-title": "1. Before You Adopt",
+            "form-before-1": "A long-term commitment — Pets can live for 10–15 years or more. Are you ready to care for them for life?",
+            "form-before-2": "Time and attention — Do you have enough time each day to feed, clean, and spend time with your pet?",
+            "form-before-3": "Financial stability — Adoption includes costs for food, vet visits, vaccinations, supplies, and possible emergencies.",
+            "form-before-4": "Family environment — Does everyone in your home agree with the adoption? Is anyone allergic or against having pets?",
+            "form-before-5": "Housing conditions — Does your home allow pets and provide enough safe space?",
+
+            "form-resp-title": "2. Responsibilities of Adopters",
+            "form-resp-1": "Provide a safe and healthy environment for your pet.",
+            "form-resp-2": "Ensure regular vaccinations and veterinary check-ups.",
+            "form-resp-3": "Never abandon or neglect your pet.",
+            "form-resp-4": "Do not use the pet for breeding or selling purposes.",
+            "form-resp-5": "Offer love, patience, and positive training.",
+
+            "form-hope-title": "3. What We Hope From Our Adopters",
+            "form-hope-1": "A strong sense of responsibility and willingness to learn.",
+            "form-hope-2": "Pets are family members, not toys.",
+            "form-hope-3": "Ask for help when facing problems.",
+
+            "form-note": "🐾 Adoption is an act of love — but also a lifelong responsibility.",
+
+            "form-title": "Adoption Application Form",
+            "form-legend": "Your Information",
+
+            "label-name": "Name :",
+            "label-lastname": "Last name :",
+            "label-female": "Female",
+            "label-male": "Male",
+            "label-age": "Age :",
+            "label-email": "Email :",
+            "label-number": "Number :",
+            "label-address": "Address :",
+            "label-pet": "Which one do you want to adopt (name):",
+
+            "form-warning": "Please make sure you have read and agreed to the guidelines before submitting.",
+            "form-submit": "Submit Application",
+
+            "vol-schedule-title": "Volunteer Activities Schedule",
+            "vol-caption": "Weekly schedule of MeowWoof volunteer activities",
+
+            "vol-day": "DAY",
+            "vol-activity": "Activity",
+            "vol-time": "Time",
+            "vol-location": "Location",
+
+            "vol-mon": "Monday",
+            "vol-mon-act": "Feeding and cleaning shelter",
+            "vol-mon-loc": "Main Shelter, Barcelona",
+
+            "vol-wed": "Wednesday",
+            "vol-wed-act": "Pet socialization & training",
+            "vol-wed-loc": "Training Park",
+
+            "vol-fri": "Friday",
+            "vol-fri-act": "Adoption event preparation",
+            "vol-fri-loc": "Event Center",
+
+            "vol-sun": "Sunday",
+            "vol-sun-act": "Adoption day & community outreach",
+            "vol-sun-loc": "Community Plaza",
+
+            "vol-form-title": "Volunteer",
+            "vol-legend": "Your Information",
+
+            "vol-label-name": "Name :",
+            "vol-label-last": "Last name :",
+            "vol-label-female": "Female",
+            "vol-label-male": "Male",
+            "vol-label-age": "Age :",
+            "vol-label-email": "Email :",
+            "vol-label-number": "Number :",
+            "vol-label-exp": "Do you have experience with pets:",
+            "vol-label-day": "Which day you want :",
+
+            "vol-submit": "Submit",
+
+            "vol-note": "If you become a volunteer, we will send you an email to notify you!",
+
+            "contact-title": "Contact",
+
+            "contact-number-label": "Number :",
+            "contact-email-label": "Email :",
+            "contact-address-label": "Address :",
+            "contact-hours-label": "Hours :",
+
+            "contact-hours": "Mon - Fri: 10:00–18:00 and Sat: 10:00 - 14:00",
+
+            "contact-map-title": "FIND US HERE"
         },
 
         es: {
@@ -221,7 +374,150 @@ $(document).ready(function () {
             "footer-copy": "© 2025 MeowWoof! | Hecho con amor 🐾",
             "footer-privacy": "Política de Privacidad",
             "footer-terms": "Términos y Condiciones",
-            "footer-cookies": "Cookies"
+            "footer-cookies": "Cookies",
+
+            "adopt-hero-title": "Dale amor a un hogar",
+            "adopt-title": "NUESTROS AMIGOS",
+
+            "petA-name": "Nombre: Emilia",
+            "petA-gender": "Género: Hembra",
+            "petA-age": "Edad: 1 año",
+            "petA-character": "Carácter: Considerada",
+
+            "petB-name": "Nombre: Lily",
+            "petB-gender": "Género: Hembra",
+            "petB-age": "Edad: 5 meses",
+            "petB-character": "Carácter: Energética",
+
+            "petC-name": "Nombre: Molly",
+            "petC-gender": "Género: Hembra",
+            "petC-age": "Edad: 3 años",
+            "petC-character": "Carácter: Fiable",
+
+            "petD-name": "Nombre: Princes",
+            "petD-gender": "Género: Hembra",
+            "petD-age": "Edad: 3 años",
+            "petD-character": "Carácter: Entusiasta",
+
+            "petE-name": "Nombre: Coco",
+            "petE-gender": "Género: Macho",
+            "petE-age": "Edad: 3 meses",
+            "petE-character": "Carácter: Alegre",
+
+            "petF-name": "Nombre: DJ",
+            "petF-gender": "Género: Macho",
+            "petF-age": "Edad: 1 año",
+            "petF-character": "Carácter: Ingenioso",
+
+            "petG-name": "Nombre: Jungle",
+            "petG-gender": "Género: Hembra",
+            "petG-age": "Edad: 7 meses",
+            "petG-character": "Carácter: Tímida",
+
+            "petH-name": "Nombre: Holiday",
+            "petH-gender": "Género: Macho",
+            "petH-age": "Edad: 5 meses",
+            "petH-character": "Carácter: Extrovertido",
+
+            "petI-name": "Nombre: Mimi",
+            "petI-gender": "Género: Hembra",
+            "petI-age": "Edad: 7 meses",
+            "petI-character": "Carácter: Sociable",
+
+            "petJ-name": "Nombre: Simba",
+            "petJ-gender": "Género: Macho",
+            "petJ-age": "Edad: 2 años",
+            "petJ-character": "Carácter: Amigable",
+
+            "form-guidelines-title": "Guía de Adopción",
+            "form-before-title": "1. Antes de Adoptar",
+            "form-before-1": "Un compromiso a largo plazo — Las mascotas pueden vivir de 10 a 15 años o más. ¿Estás preparado para cuidarlas durante toda su vida?",
+            "form-before-2": "Tiempo y atención diaria — ¿Tienes suficiente tiempo cada día para alimentar, limpiar y pasar tiempo con tu mascota?",
+            "form-before-3": "Estabilidad financiera — La adopción incluye gastos de alimentación, visitas al veterinario, vacunas, suministros y posibles emergencias.",
+            "form-before-4": "Entorno familiar — ¿Están todos en casa de acuerdo con la adopción? ¿Alguien es alérgico o está en contra de tener mascotas?",
+            "form-before-5": "Condiciones de vivienda — ¿Tu hogar permite mascotas y ofrece suficiente espacio seguro?",
+
+            "form-resp-title": "2. Responsabilidades del Adoptante",
+            "form-resp-1": "Proporcionar un entorno seguro.",
+            "form-resp-2": "Vacunas y revisiones veterinarias.",
+            "form-resp-3": "Nunca abandonar la mascota.",
+            "form-resp-4": "No usar para reproducción o venta.",
+            "form-resp-5": "Dar amor y paciencia.",
+
+            "form-hope-title": "3. Lo que Esperamos",
+            "form-hope-1": "Responsabilidad.",
+            "form-hope-2": "Las mascotas son familia.",
+            "form-hope-3": "Pedir ayuda cuando sea necesario.",
+
+            "form-note": "🐾 Adoptar es un acto de amor.",
+
+            "form-title": "Formulario de Adopción",
+            "form-legend": "Tu Información",
+
+            "label-name": "Nombre :",
+            "label-lastname": "Apellido :",
+            "label-female": "Mujer",
+            "label-male": "Hombre",
+            "label-age": "Edad :",
+            "label-email": "Correo :",
+            "label-number": "Teléfono :",
+            "label-address": "Dirección :",
+            "label-pet": "¿Qué mascota quieres adoptar?",
+
+            "form-warning": "Asegúrate de haber leído las normas.",
+            "form-submit": "Enviar Solicitud",
+
+            "vol-schedule-title": "Horario de Actividades de Voluntarios",
+            "vol-caption": "Horario semanal de actividades de voluntariado de MeowWoof",
+
+            "vol-day": "DÍA",
+            "vol-activity": "Actividad",
+            "vol-time": "Hora",
+            "vol-location": "Lugar",
+
+            "vol-mon": "Lunes",
+            "vol-mon-act": "Alimentar y limpiar el refugio",
+            "vol-mon-loc": "Refugio principal, Barcelona",
+
+            "vol-wed": "Miércoles",
+            "vol-wed-act": "Socialización y entrenamiento",
+            "vol-wed-loc": "Parque de entrenamiento",
+
+            "vol-fri": "Viernes",
+            "vol-fri-act": "Preparación del evento de adopción",
+            "vol-fri-loc": "Centro de eventos",
+
+            "vol-sun": "Domingo",
+            "vol-sun-act": "Día de adopción y comunidad",
+            "vol-sun-loc": "Plaza comunitaria",
+
+            "vol-form-title": "Voluntario",
+            "vol-legend": "Tu información",
+
+            "vol-label-name": "Nombre :",
+            "vol-label-last": "Apellido :",
+            "vol-label-female": "Mujer",
+            "vol-label-male": "Hombre",
+            "vol-label-age": "Edad :",
+            "vol-label-email": "Correo :",
+            "vol-label-number": "Teléfono :",
+            "vol-label-exp": "¿Tienes experiencia con mascotas?",
+            "vol-label-day": "¿Qué día quieres?",
+
+            "vol-submit": "Enviar",
+
+            "vol-note": "Si te conviertes en voluntario, te enviaremos un correo de confirmación.",
+
+            "contact-title": "Contacto",
+
+            "contact-number-label": "Número :",
+            "contact-email-label": "Correo :",
+            "contact-address-label": "Dirección :",
+            "contact-hours-label": "Horario :",
+
+            "contact-hours": "Lun - Vie: 10:00–18:00 y Sáb: 10:00 - 14:00",
+
+            "contact-map-title": "ENCUÉNTRANOS AQUÍ"
         },
 
         ca: {
@@ -295,7 +591,150 @@ $(document).ready(function () {
             "footer-copy": "© 2025 MeowWoof! | Fet amb amor 🐾",
             "footer-privacy": "Política de Privacitat",
             "footer-terms": "Termes i Condicions",
-            "footer-cookies": "Cookies"
+            "footer-cookies": "Cookies",
+
+            "adopt-hero-title": "Dóna amor a una llar",
+            "adopt-title": "ELS NOSTRES AMICS",
+
+            "petA-name": "Nom: Emilia",
+            "petA-gender": "Gènere: Femella",
+            "petA-age": "Edat: 1 any",
+            "petA-character": "Caràcter: Considerada",
+
+            "petB-name": "Nom: Lily",
+            "petB-gender": "Gènere: Femella",
+            "petB-age": "Edat: 5 mesos",
+            "petB-character": "Caràcter: Energètica",
+
+            "petC-name": "Nom: Molly",
+            "petC-gender": "Gènere: Femella",
+            "petC-age": "Edat: 3 anys",
+            "petC-character": "Caràcter: Fiable",
+
+            "petD-name": "Nom: Princes",
+            "petD-gender": "Gènere: Femella",
+            "petD-age": "Edat: 3 anys",
+            "petD-character": "Caràcter: Entusiasta",
+
+            "petD-name": "Nom: Coco",
+            "petE-gender": "Gènere: Mascle",
+            "petE-age": "Edat: 3 mesos",
+            "petE-character": "Caràcter: Alegre",
+
+            "petF-name": "Nom: DJ",
+            "petF-gender": "Gènere: Mascle",
+            "petF-age": "Edat: 1 any",
+            "petF-character": "Caràcter: Enginyós",
+
+            "petG-name": "Nom: Jungle",
+            "petG-gender": "Gènere: Femella",
+            "petG-age": "Edat: 7 mesos",
+            "petG-character": "Caràcter: Reservada",
+
+            "petH-name": "Nom: Holiday",
+            "petH-gender": "Gènere: Mascle",
+            "petH-age": "Edat: 5 mesos",
+            "petH-character": "Caràcter: Extrovertit",
+
+            "petI-name": "Nom: Mimi",
+            "petI-gender": "Gènere: Femella",
+            "petI-age": "Edat: 7 mesos",
+            "petI-character": "Caràcter: Sociable",
+
+            "petJ-name": "Nom: Simba",
+            "petJ-gender": "Gènere: Mascle",
+            "petJ-age": "Edat: 2 anys",
+            "petJ-character": "Caràcter: Amigable",
+
+            "form-guidelines-title": "Guia d'Adopció",
+            "form-before-title": "1. Abans d'Adoptar",
+            "form-before-1": "Compromís a llarg termini — Les mascotes poden viure de 10 a 15 anys o més. Estàs preparat per cuidar-les durant tota la seva vida?",
+            "form-before-2": "Temps i atenció — Tens prou temps cada dia per alimentar, netejar i passar estones amb la teva mascota?",
+            "form-before-3": "Estabilitat financera — L'adopció inclou despeses d'alimentació, visites al veterinari, vacunes, subministraments i possibles emergències.",
+            "form-before-4": "Entorn familiar — Tothom a casa està d'acord amb l'adopció? Algú és al·lèrgic o està en contra de tenir mascotes?",
+            "form-before-5": "Condicions d'habitatge — La teva llar permet mascotes i ofereix prou espai segur?",
+
+            "form-resp-title": "2. Responsabilitats de l'Adoptant",
+            "form-resp-1": "Proporcionar un entorn segur.",
+            "form-resp-2": "Vacunes i revisions veterinàries.",
+            "form-resp-3": "No abandonar mai la mascota.",
+            "form-resp-4": "No utilitzar per cria o venda.",
+            "form-resp-5": "Donar amor i paciència.",
+
+            "form-hope-title": "3. El que Esperem",
+            "form-hope-1": "Responsabilitat.",
+            "form-hope-2": "Les mascotes són família.",
+            "form-hope-3": "Demanar ajuda quan sigui necessari.",
+
+            "form-note": "🐾 Adoptar és un acte d'amor.",
+
+            "form-title": "Formulari d'Adopció",
+            "form-legend": "La Teva Informació",
+
+            "label-name": "Nom :",
+            "label-lastname": "Cognom :",
+            "label-female": "Dona",
+            "label-male": "Home",
+            "label-age": "Edat :",
+            "label-email": "Correu :",
+            "label-number": "Telèfon :",
+            "label-address": "Adreça :",
+            "label-pet": "Quina mascota vols adoptar?",
+
+            "form-warning": "Assegura't d'haver llegit les normes.",
+            "form-submit": "Enviar Sol·licitud",
+
+            "vol-schedule-title": "Horari d'Activitats de Voluntaris",
+            "vol-caption": "Horari setmanal de voluntariat de MeowWoof",
+
+            "vol-day": "DIA",
+            "vol-activity": "Activitat",
+            "vol-time": "Hora",
+            "vol-location": "Lloc",
+
+            "vol-mon": "Dilluns",
+            "vol-mon-act": "Alimentar i netejar el refugi",
+            "vol-mon-loc": "Refugi principal, Barcelona",
+
+            "vol-wed": "Dimecres",
+            "vol-wed-act": "Socialització i entrenament",
+            "vol-wed-loc": "Parc d'entrenament",
+
+            "vol-fri": "Divendres",
+            "vol-fri-act": "Preparació de l'esdeveniment d'adopció",
+            "vol-fri-loc": "Centre d'esdeveniments",
+
+            "vol-sun": "Diumenge",
+            "vol-sun-act": "Dia d'adopció i comunitat",
+            "vol-sun-loc": "Plaça comunitària",
+
+            "vol-form-title": "Voluntari",
+            "vol-legend": "La teva informació",
+
+            "vol-label-name": "Nom :",
+            "vol-label-last": "Cognom :",
+            "vol-label-female": "Dona",
+            "vol-label-male": "Home",
+            "vol-label-age": "Edat :",
+            "vol-label-email": "Correu :",
+            "vol-label-number": "Telèfon :",
+            "vol-label-exp": "Tens experiència amb mascotes?",
+            "vol-label-day": "Quin dia vols?",
+
+            "vol-submit": "Enviar",
+
+            "vol-note": "Si et converteixes en voluntari, t'enviarem un correu per confirmar-ho.",
+
+            "contact-title": "Contacte",
+
+            "contact-number-label": "Telèfon :",
+            "contact-email-label": "Correu :",
+            "contact-address-label": "Adreça :",
+            "contact-hours-label": "Horari :",
+
+            "contact-hours": "Dl - Dv: 10:00–18:00 i Ds: 10:00 - 14:00",
+
+            "contact-map-title": "TROBA'NS AQUÍ"
         }
 
     };
@@ -312,7 +751,7 @@ $(document).ready(function () {
             const id = $(this).attr("id");
 
             if (translations[lang][id]) {
-                $(this).text(translations[lang][id]);
+                $(this).html(translations[lang][id]);
             }
 
         });
@@ -326,7 +765,7 @@ $(document).ready(function () {
             const id = $(this).attr("id");
 
             if (translations[lang][id]) {
-                $(this).text(translations[lang][id]);
+                $(this).html(translations[lang][id]);
             }
 
         });
@@ -340,7 +779,7 @@ $(document).ready(function () {
             const id = $(this).attr("id");
 
             if (translations[lang][id]) {
-                $(this).text(translations[lang][id]);
+                $(this).html(translations[lang][id]);
             }
 
         });
@@ -354,21 +793,17 @@ $(document).ready(function () {
             $(this).contents().find("[id]").each(function(){
                 const id = $(this).attr("id");
                 if(translations[lang][id]){
-                    $(this).text(translations[lang][id]);
+                    $(this).html(translations[lang][id]);
                 }
             });
         }
     });
 
-    $(document).ready(function(){
+    const savedLang = localStorage.getItem("lang");
 
-        const savedLang = localStorage.getItem("lang");
-
-        if(savedLang){
-            $("#selector-idiomas button[data-lang='" + savedLang + "']").click();
-        }
-
-    });
+    if(savedLang){
+        $("#selector-idiomas button[data-lang='" + savedLang + "']").click();
+    }
 
 });
 
