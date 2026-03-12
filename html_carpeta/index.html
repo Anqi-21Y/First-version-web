@@ -17,33 +17,41 @@
 </head>
 
 <body>
+
     <!-- Header -->
     <iframe id="headerFrame" src="../html_carpeta/header.html" frameborder="0"
         style="display:block; width:100%; height:180px; border:none; margin:0; padding:0;"></iframe>
 
+    <!-- Idioma -->
+    <div id="selector-idiomas">
+        <button data-lang="ca">CA</button>
+        <button data-lang="es">ES</button>
+        <button data-lang="en">EN</button>
+    </div>
+    
     <main>
         <!-- HERO SECTION -->
         <section class="container"> 
             <img src="../imag_carpeta/img_backg_optimized.png" alt="animal_with_human">
             <div class="text"> 
-                <h2>Welcome to MeowWoof !!</h2> 
-                <p>We give homeless pets a second chance to find love, warmth, and family</p> 
+                <h2 id="hero-h2">Welcome to MeowWoof !!</h2> 
+                <p id="hero-p">We give homeless pets a second chance to find love, warmth, and family</p> 
             </div> 
         </section>
 
         <!-- ABOUT SECTION -->
         <section class="about">
-            <h2>About Us</h2>
-            <p><strong>MeowWoof</strong> was born from a simple dream — to see every cat and dog with a safe, loving home.</p>
-            <p>Our mission is to rescue, rehabilitate, and rehome abandoned animals in Barcelona. With the help of local volunteers and kind-hearted adopters, we’ve successfully found families for over <strong>200 pets</strong> since 2023.</p>
-            <p>We believe that adoption is not just saving a life, but also gaining a loyal friend who will love you forever.</p>
-            <p>Our goal for the future is to expand our foster network, provide medical care for more stray animals, and inspire a stronger community of compassion and responsibility.</p>
+            <h2 id="about-h2">About Us</h2>
+            <p id="about-p1"><strong>MeowWoof</strong> was born from a simple dream — to see every cat and dog with a safe, loving home.</p>
+            <p id="about-p2">Our mission is to rescue, rehabilitate, and rehome abandoned animals in Barcelona. With the help of local volunteers and kind-hearted adopters, we’ve successfully found families for over <strong>200 pets</strong> since 2023.</p>
+            <p id="about-p3">We believe that adoption is not just saving a life, but also gaining a loyal friend who will love you forever.</p>
+            <p id="about-p4">Our goal for the future is to expand our foster network, provide medical care for more stray animals, and inspire a stronger community of compassion and responsibility.</p>
         </section>
 
         <!-- VIDEO SECTION -->
         <section class="video-section">
-            <h2>See Love in Action</h2>
-            <p>Every rescue tells a story. Watch how love changes lives.</p>
+            <h2 id="video-h2">See Love in Action</h2>
+            <p id="video-p">Every rescue tells a story. Watch how love changes lives.</p>
 
             <div class="video-wrapper">
                 <video controls preload="metadata">
@@ -54,106 +62,102 @@
             </div>
         </section>
 
-
-
-
         <!-- VOLUNTEER SECTION -->
         <section class="volunteer hero-style">
             <img src="../imag_carpeta/clap.jpg" alt="dog and human clap" class="bg-img">
             <div class="content">
-                <h2>Become Our Partner</h2>
-                <p>Join our mission to rescue, rehabilitate, and rehome abandoned pets in Barcelona.
+                <h2 id="volunteer-h2">Become Our Partner</h2>
+                <p id="volunteer-p1">Join our mission to rescue, rehabilitate, and rehome abandoned pets in Barcelona.
                 As a volunteer, you can help with daily care, socializing animals, preparing them
                 for adoption, supporting events, or assisting families during adoption processes.</p>
-                <p>Your time, love, and kindness can change a life — sometimes, even save one.</p>
+                <p id="volunteer-p2">Your time, love, and kindness can change a life — sometimes, even save one.</p>
                 <div class="volunteer_button">
-                    <a href="../html_carpeta/volunteer.html" class="btn btn-outline">Become a Volunteer</a>
+                    <a href="../html_carpeta/volunteer.html" class="btn btn-outline" id="volunteer-btn">Become a Volunteer</a>
                 </div>
             </div>
         </section>
 
-
         <!-- ADOPT SECTION -->
         <section class="adopt_section">
             <div class="adopt_header">
-                <h2>Find Your Soulmate</h2>
-                <p>There are some cute guys waiting for a home</p>
+                <h2 id="adopt-h2">Find Your Soulmate</h2>
+                <p id="adopt-p">There are some cute guys waiting for a home</p>
             </div>
 
             <div class="card_container">
                 <div class="pet_card">
                     <img src="../imag_carpeta/catlily.jpg" alt="Lily">
-                    <h4>Name: Lily</h4>
-                    <p>Gender: Girl</p>
-                    <p>Age: 5 months</p> 
-                    <p>Character: Energetic</p>
-                    <a href="../html_carpeta/Atopt_form.html" class="adopt_button">Adopt</a>
+                    <h4 id="pet1-name">Name: Lily</h4>
+                    <p id="pet1-gender">Gender: Girl</p>
+                    <p id="pet1-age">Age: 5 months</p> 
+                    <p id="pet1-character">Character: Energetic</p>
+                    <a href="../html_carpeta/Atopt_form.html" class="adopt_button" id="pet1-adopt">Adopt</a>
                 </div>
 
                 <div class="pet_card">
                     <img src="../imag_carpeta/dog_Molly.jpg" alt="Molly">
-                    <h4>Name: Molly</h4>
-                    <p>Gender: Girl</p>
-                    <p>Age: 3 years old</p>
-                    <p>Character: Reliable</p>
-                    <a href="../html_carpeta/Atopt_form.html" class="adopt_button" title="Click to adopt this pet">Adopt</a>
+                    <h4 id="pet2-name">Name: Molly</h4>
+                    <p id="pet2-gender">Gender: Girl</p>
+                    <p id="pet2-age">Age: 3 years old</p>
+                    <p id="pet2-character">Character: Reliable</p>
+                    <a href="../html_carpeta/Atopt_form.html" class="adopt_button" title="Click to adopt this pet" id="pet2-adopt">Adopt</a>
                 </div>
 
                 <div class="pet_card">
                     <img src="../imag_carpeta/dog_princes.jpg" alt="Princes">
-                    <h4>Name: Princes</h4>
-                    <p>Gender: Girl</p>
-                    <p>Age: 3 years old</p>
-                    <p>Character: Enthusiastic</p>
-                    <a href="../html_carpeta/Atopt_form.html" class="adopt_button" title="Click to adopt this pet">Adopt</a>
+                    <h4 id="pet3-name">Name: Princes</h4>
+                    <p id="pet3-gender">Gender: Girl</p>
+                    <p id="pet3-age">Age: 3 years old</p>
+                    <p id="pet3-character">Character: Enthusiastic</p>
+                    <a href="../html_carpeta/Atopt_form.html" class="adopt_button" title="Click to adopt this pet" id="pet3-adopt">Adopt</a>
                 </div>
 
                 <div class="pet_card">
                     <img src="../imag_carpeta/dog_dj.jpg" alt="DJ">
-                    <h4>Name: DJ</h4>
-                    <p>Gender: Boy</p>
-                    <p>Age: 1 year old</p>
-                    <p>Character: Resourceful</p>
-                    <a href="../html_carpeta/Atopt_form.html" class="adopt_button" title="Click to adopt this pet">Adopt</a>
+                    <h4 id="pet4-name">Name: DJ</h4>
+                    <p id="pet4-gender">Gender: Boy</p>
+                    <p id="pet4-age">Age: 1 year old</p>
+                    <p id="pet4-character">Character: Resourceful</p>
+                    <a href="../html_carpeta/Atopt_form.html" class="adopt_button" title="Click to adopt this pet" id="pet4-adopt">Adopt</a>
                 </div>
             </div>
 
             <div class="adopt_button_wrapper">
-                <a href="../html_carpeta/adopt.html" class="btn">Meet More</a>
+                <a href="../html_carpeta/adopt.html" class="btn" id="adopt-btn">Meet More</a>
             </div>
         </section>
 
         <!-- STORIES SECTION -->
         <section class="stories">
-            <h2>Lovly Story</h2>
+            <h2 id="stories-h2">Lovly Story</h2>
             <button id="addStory" class="btn btn-outline">Add a New Story</button>
-            <p>Every adoption marks a new beginning. These transformations fill us with pride and joy.</p>
+            <p id="stories-p">Every adoption marks a new beginning. These transformations fill us with pride and joy.</p>
 
             <div class="stories_container">
                 <div class="story">
                     <img src="../imag_carpeta/catAtoptC.jpg" alt="Lulu ahora Leo - Gato antes y después de la adopción">
                     <div class="story-content">
-                        <p class="story-names"><strong>Lulu → Leo</strong></p>
-                        <p class="story-date">Adopted: October 2023</p>
-                        <p class="story-author">— María, Barcelona</p>
+                        <p class="story-names" id="story1-names"><strong>Lulu → Leo</strong></p>
+                        <p class="story-date" id="story1-date">Adopted: October 2023</p>
+                        <p class="story-author" id="story1-author">— María, Barcelona</p>
                     </div>
                 </div>
 
                 <div class="story">
                     <img src="../imag_carpeta/dogAtopdCB.jpg" alt="Lucky - Perro antes y después de la adopción">
                     <div class="story-content">
-                        <p class="story-names"><strong>Lucky</strong></p>
-                        <p class="story-date">Adopted: May 2023</p>
-                        <p class="story-author">— Carlos & Ana, Gràcia</p>
+                        <p class="story-names" id="story2-names"><strong>Lucky</strong></p>
+                        <p class="story-date" id="story2-date">Adopted: May 2023</p>
+                        <p class="story-author" id="story2-author">— Carlos & Ana, Gràcia</p>
                     </div>
                 </div>
 
                 <div class="story">
                     <img src="../imag_carpeta/dogAdoptCM.jpg" alt="Bombo ahora Tutu - Perro antes y después de la adopción">
                     <div class="story-content">
-                        <p class="story-names"><strong>Bombo → Tutu</strong></p>
-                        <p class="story-date">Adopted: December 2023</p>
-                        <p class="story-author">— Rodríguez family</p>
+                        <p class="story-names" id="story3-names"><strong>Bombo → Tutu</strong></p>
+                        <p class="story-date" id="story3-date">Adopted: December 2023</p>
+                        <p class="story-author" id="story3-author">— Rodríguez family</p>
                     </div>
                 </div>
             </div>
@@ -161,9 +165,9 @@
 
         <!-- CALL TO ACTION -->
         <section class="cta">
-            <h3>Ready to make a difference?</h3>
-            <a href="../html_carpeta/volunteer.html" class="btn">Join Us Now</a>
-            <a href="../html_carpeta/adopt.html" class="btn-outline">Adopt a Pet</a>
+            <h3 id="cta-h3">Ready to make a difference?</h3>
+            <a href="../html_carpeta/volunteer.html" class="btn" id="cta-btn1">Join Us Now</a>
+            <a href="../html_carpeta/adopt.html" class="btn-outline" id="cta-btn2">Adopt a Pet</a>
         </section>
         
     </main>
