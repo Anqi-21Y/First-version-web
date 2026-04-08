@@ -1,0 +1,67 @@
+.container {
+    position: relative;
+    overflow: hidden;
+}
+
+#heroCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2; 
+    pointer-events: none; /* No interfiera con la selección de texto ni con la función de clic. */
+}
+
+.container .text {
+    z-index: 3; /* asegurar el texto esta en superior */
+}
+
+/* Aislamiento de estilo de bloque de gráfico */
+.js-interact-v1.chart-section {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.js-interact-v1 canvas {
+    margin: 20px 0;
+    max-height: 400px;
+}
+
+/* Forzar que los colores de los botones del gráfico coincidan con el tema. */
+
+#updateChart {
+    display: block;
+    margin: 30px auto 10px;
+    padding: 18px 45px; 
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px; 
+    color: white;
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(122, 199, 169, 0.3);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+
+#updateChart:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 12px 20px rgba(122, 199, 169, 0.4); 
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary)); 
+}
+
+
+#updateChart:active {
+    transform: translateY(-1px) scale(0.98);
+    box-shadow: 0 5px 10px rgba(122, 199, 169, 0.3);
+}

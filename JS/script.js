@@ -300,7 +300,15 @@ $(document).ready(function () {
 
             "contact-hours": "Mon - Fri: 10:00–18:00 and Sat: 10:00 - 14:00",
 
-            "contact-map-title": "FIND US HERE"
+            "contact-map-title": "FIND US HERE",
+
+            "chart-h2": "Adoption Statistics",
+            "chart-p": "Our rescued pets by category",
+            "updateChart": "Update Data",
+            "chart-label": "Adopted Pets",
+            "chart-dogs": "Dogs",
+            "chart-cats": "Cats",
+            "chart-others": "Others"
         },
 
         es: {
@@ -517,7 +525,15 @@ $(document).ready(function () {
 
             "contact-hours": "Lun - Vie: 10:00–18:00 y Sáb: 10:00 - 14:00",
 
-            "contact-map-title": "ENCUÉNTRANOS AQUÍ"
+            "contact-map-title": "ENCUÉNTRANOS AQUÍ",
+
+            "chart-h2": "Estadísticas de Adopción",
+            "chart-p": "Nuestras mascotas rescatadas por categoría",
+            "updateChart": "Actualizar Datos",
+            "chart-label": "Mascotas Adoptadas",
+            "chart-dogs": "Perros",
+            "chart-cats": "Gatos",
+            "chart-others": "Otros"
         },
 
         ca: {
@@ -734,7 +750,15 @@ $(document).ready(function () {
 
             "contact-hours": "Dl - Dv: 10:00–18:00 i Ds: 10:00 - 14:00",
 
-            "contact-map-title": "TROBA'NS AQUÍ"
+            "contact-map-title": "TROBA'NS AQUÍ",
+
+            "chart-h2": "Estadístiques d'Adopció",
+            "chart-p": "Les nostres mascotes rescatades per categoria",
+            "updateChart": "Actualitzar Dades",
+            "chart-label": "Mascotes Adoptades",
+            "chart-dogs": "Gossos",
+            "chart-cats": "Gats",
+            "chart-others": "Altres"
         }
 
     };
@@ -815,6 +839,8 @@ $(document).ready(function () {
     localStorage.setItem("lang", lang);
 
     });
+
+    
 
 });
 

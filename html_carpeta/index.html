@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¡MeowWoof!</title>
     <link rel="stylesheet" href="../style_carpeta/style_home.css">
+    <link rel="stylesheet" href="../style_carpeta/interactividad_practica13.css">
     <link rel="icon" href="../imag_carpeta/logo.png" type="image/png">
     <!-- jQuery UI CSS -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
@@ -14,6 +15,12 @@
 
     <!-- jQuery UI CDN -->
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    <!--Práctica 13: Integración de contenidos interactivos-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+    <link rel="stylesheet" href="../style_carpeta/interactividad_practica13.css">
 </head>
 
 <body>
@@ -39,8 +46,10 @@
     
     <main>
         <!-- HERO SECTION -->
+        <!--canvas-->
         <section class="container"> 
             <img src="../imag_carpeta/img_backg_optimized.png" alt="animal_with_human">
+            <canvas id="heroCanvas"></canvas>
             <div class="text"> 
                 <h2 id="hero-h2">Welcome to MeowWoof !!</h2> 
                 <p id="hero-p">We give homeless pets a second chance to find love, warmth, and family</p> 
@@ -54,6 +63,15 @@
             <p id="about-p2">Our mission is to rescue, rehabilitate, and rehome abandoned animals in Barcelona. With the help of local volunteers and kind-hearted adopters, we’ve successfully found families for over <strong>200 pets</strong> since 2023.</p>
             <p id="about-p3">We believe that adoption is not just saving a life, but also gaining a loyal friend who will love you forever.</p>
             <p id="about-p4">Our goal for the future is to expand our foster network, provide medical care for more stray animals, and inspire a stronger community of compassion and responsibility.</p>
+        </section>
+
+        <!--trabajo de Chart.js-->
+        <section class="js-interact-v1 chart-section">
+            <h2 id="chart-h2">Adoption Statistics</h2>
+            <p id="chart-p">Our rescued pets by category</p>
+
+            <canvas id="adoptionChart"></canvas> <!--si usamos canvas -> cahrt.js es necesario-->
+            <button id="updateChart" class="btn">update Data</button>
         </section>
 
         <!-- VIDEO SECTION -->
@@ -186,5 +204,6 @@
 
     <script src="../JS/script.js"></script>
     <script src="../JS/jquery.js"></script>
+    <script src="../JS/interactividad_practica13.js"></script>
 </body>
 </html>
