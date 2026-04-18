@@ -285,6 +285,71 @@ Para permitir que estos elementos también se traduzcan, el script accede al con
 De esta manera se conserva la arquitectura original del proyecto sin alterar la estructura base del HTML.
 
 
+## Práctica 13 – Integración de contenidos interactivos (M09)
+
+### Objetivo
+
+Integrar contenido interactivo en la landing page de MeowWoof utilizando Chart.js, Anime.js y Canvas, mejorando la experiencia de usuario sin modificar la estructura base.
+
+---
+
+### Archivos utilizados
+
+* `/js/interactividad_practica13.js`
+* `/css/interactividad_practica13.css`
+
+---
+
+### A. Visualización dinámica (Chart.js)
+
+* Gráfico de barras con estadísticas de adopción
+* Diseño responsive
+* Colores personalizados según el tema
+* Botón que actualiza los datos dinámicamente
+
+**Selectores:**
+
+* `#adoptionChart`
+* `#updateChart`
+
+---
+
+### B. Animaciones (Anime.js)
+
+* Animación de entrada escalonada en `.pet_card`
+* Efecto hover en `.adopt_button` (scale)
+* Animaciones fluidas y ligeras
+
+---
+
+### C. Canvas interactivo
+
+* Canvas en el Hero (`#heroCanvas`)
+* Animación con `requestAnimationFrame`
+* Elemento gráfico que sigue el cursor
+* Adaptación responsive
+
+---
+
+### D. Integración y buenas prácticas
+
+* Código encapsulado en función autoejecutable
+* Uso de prefijo `.js-interact-v1` para evitar conflictos
+* Librerías cargadas por CDN
+
+---
+
+### Librerías
+
+* Chart.js
+* Anime.js
+
+---
+
+### Resultado
+
+Página más dinámica, interactiva y visualmente coherente sin afectar el rendimiento.
+
 ## Resultado
 
 La página ahora no solo es adaptativa y visualmente coherente, sino también interactiva y dinámica, mejorando la experiencia del usuario y cumpliendo los requisitos de la Unidad 4.
