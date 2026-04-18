@@ -111,6 +111,14 @@
 
                     <label for="pet_name" id="label-pet">Which one do you want to adopt (name):</label>
                     <input type="text" id="pet_name" name="pet_name" required>
+
+                    <label for="password" id="label-password">Security Access Code:</label>
+                    <input type="password" id="password" name="password" required placeholder="Min 8 chars, 1 UPPERCASE, 1 lowercase, 1 number">
+
+                    <label for="motivation" id="label-motivation">Why do you want to adopt this pet ? </label>
+                    <textarea name="motivation" id="motivation" maxlength="200" required placeholder="Tell us about your home and experience..."></textarea>
+
+                    <span id="contador">0 / 200</span>
                 </fieldset>
 
                 <h5 class="note" id="form-warning">
@@ -129,5 +137,6 @@
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="../JS/script.js"></script>
+    <script src="../JS/II_practica13.js"></script>
 </body>
 </html>
