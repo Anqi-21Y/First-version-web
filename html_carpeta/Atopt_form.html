@@ -78,7 +78,7 @@
         <section class="form_section">
             <h2 id="form-title">Adoption Application Form</h2>
 
-            <form action="#" method="post">
+            <form id="adoptForm">
 
                 <fieldset>
                     <legend id="form-legend">Your Information</legend>
@@ -98,7 +98,7 @@
                     </div>
 
                     <label for="age" id="label-age">Age :</label>
-                    <input type="number" id="age" name="age" min="0" required>
+                    <input type="number" id="age" name="age" min="0" max="80" required>
 
                     <label for="email" id="label-email">Email :</label>
                     <input type="email" id="email" name="email" required>
@@ -132,8 +132,30 @@
     </main>
 
     <!--footer-->
-    <iframe src="../html_carpeta/footer.html" frameborder="0"
-    style="display: block; width: 100%;height: 500px; border: none; margin: 0; padding:0;"></iframe>
+    <!-- Footer -->
+    <iframe id="footer-frame" src="../html_carpeta/footer.html" frameborder="0" style="display: block; width: 100%; border: none; margin: 0; padding: 0; height: 500px;"></iframe>
+
+    <script>
+    const iframe = document.getElementById('footer-frame');
+    
+    iframe.addEventListener('load', () => {
+        const resizeIframe = () => {
+        try {
+            const body = iframe.contentDocument.body;
+            const height = body.scrollHeight;
+            iframe.style.height = height + 'px';
+        } catch(e) {}
+        };
+
+        resizeIframe();
+
+        // Escuchar los cambios en el tamaño interno del iframe.
+        try {
+        const observer = new ResizeObserver(resizeIframe);
+        observer.observe(iframe.contentDocument.body);
+        } catch(e) {}
+    });
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="../JS/script.js"></script>

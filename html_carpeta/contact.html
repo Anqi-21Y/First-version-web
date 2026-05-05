@@ -2,87 +2,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Contact – MeowWoof</title>
     <link rel="stylesheet" href="../style_carpeta/contact.css">
     <link rel="icon" href="../imag_carpeta/logo.png" type="image/png">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
-    <!--header-->
-    <iframe  id="headerFrame" src="../html_carpeta/header.html" frameborder="0"
-    style="display: block; width: 100%;height: 130px; border: none; margin: 0; padding:0;"></iframe>
 
-    <!-- Idioma -->
+    <!-- Header iframe -->
+    <iframe id="headerFrame" src="../html_carpeta/header.html" frameborder="0"
+        style="display: block; width: 100%; height: 130px; border: none; margin: 0; padding: 0;"></iframe>
+
+    <!-- Language selector -->
     <div id="selector-idiomas">
-
-        <div class="lang-selected">
-             ▾
-        </div>
-
+        <div class="lang-selected">▾</div>
         <div class="lang-options">
             <button data-lang="en">EN</button>
             <button data-lang="es">ES</button>
             <button data-lang="ca">CA</button>
         </div>
-
     </div>
+
 
     <main>
 
-        <div class="main_flex">
+        <!-- Hero: image + contact info card -->
+        <div class="contact-hero">
 
-            <div class="right">
-                <img src="../imag_carpeta/catscats.jpg" alt="catscats">
-            </div>  
-
-            <div class="left">
-
-                <h2 id="contact-title">Contact</h2>
-
-                <p>
-                    <strong id="contact-number-label">Number :</strong>
-                    <span id="contact-number">+34 666 017 013</span>
-                </p>
-
-                <p>
-                    <strong id="contact-email-label">Email :</strong>
-                    <span id="contact-email">contacto@adopcionfeliz.com</span>
-                </p>
-
-                <p>
-                    <strong id="contact-address-label">Address :</strong>
-                    <span id="contact-address">
-                        Calle de los Animales Felices, 17, Barcelona
-                    </span>
-                </p>
-
-                <p>
-                    <strong id="contact-hours-label">Hours :</strong>
-                    <span id="contact-hours">
-                        Mon - Fri: 10:00–18:00 and Sat: 10:00 - 14:00
-                    </span>
-                </p>
-
+            <div class="contact-image">
+                <img src="../imag_carpeta/catscats.jpg" alt="Cats at MeowWoof">
+                <div class="contact-image-badge"><i class="fa-solid fa-map-pin"></i>Barcelona</div>
             </div>
 
+            <div class="contact-card">
+                <h2 id="contact-info-title">Contact info</h2>
+
+                <div class="contact-row">
+                    <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="contact-row-text">
+                        <div class="contact-row-label" id="contact-number-label">Phone</div>
+                        <div class="contact-row-value" id="contact-number">+34 666 017 013</div>
+                    </div>
+                </div>
+
+                <div class="contact-row">
+                    <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="contact-row-text">
+                        <div class="contact-row-label" id="contact-email-label">Email</div>
+                        <div class="contact-row-value" id="contact-email">contacto@adopcionfeliz.com</div>
+                    </div>
+                </div>
+
+                <div class="contact-row">
+                    <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="contact-row-text">
+                        <div class="contact-row-label" id="contact-address-label">Address</div>
+                        <div class="contact-row-value" id="contact-address">Calle de los Animales Felices, 17, Barcelona</div>
+                    </div>
+                </div>
+
+                <div class="contact-row">
+                    <div class="contact-icon"><i class="fa-regular fa-clock"></i></div>
+                    <div class="contact-row-text">
+                        <div class="contact-row-label" id="contact-hours-label">Hours</div>
+                        <div class="contact-row-value" id="contact-hours">Mon–Fri: 10:00–18:00<br>Sat: 10:00–14:00</div>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
-
-        <section class="map">
-
-            <h2 id="contact-map-title">FIND US HERE</h2>
-
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5984.626750727542!2d2.1668772765969986!3d41.41071557129673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a3ed552af55b%3A0x519ed8fb6d888ee8!2sILERNA%20Barcelona%20-%20Centro%20de%20Formaci%C3%B3n%20Profesional!5e0!3m2!1ses!2ses!4v1760368515636!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+        <!-- Map section -->
+        <section class="map-section">
+            <div class="map-section-header">
+                <h2 id="contact-map-title">Find us here</h2>
+                <span class="map-pill">Open in Maps</span>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5984.626750727542!2d2.1668772765969986!3d41.41071557129673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a3ed552af55b%3A0x519ed8fb6d888ee8!2sILERNA%20Barcelona%20-%20Centro%20de%20Formaci%C3%B3n%20Profesional!5e0!3m2!1ses!2ses!4v1760368515636!5m2!1ses!2ses"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="MeowWoof location map">
+            </iframe>
         </section>
+
     </main>
 
-    <!--footer-->
-    <iframe src="../html_carpeta/footer.html" frameborder="0"
-    style="display: block; width: 100%;height: 500px; border: none; margin: 0; padding:0;"></iframe>
+    <!-- Footer iframe -->
+    <iframe id="footer-frame" src="../html_carpeta/footer.html" frameborder="0"
+        style="display: block; width: 100%; border: none; margin: 0; padding: 0; height: 500px;"></iframe>
+
+    <script>
+        const iframe = document.getElementById('footer-frame');
+        iframe.addEventListener('load', () => {
+            const resize = () => {
+                try {
+                    iframe.style.height = iframe.contentDocument.body.scrollHeight + 'px';
+                } catch(e) {}
+            };
+            resize();
+            try { new ResizeObserver(resize).observe(iframe.contentDocument.body); } catch(e) {}
+        });
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="../JS/script.js"></script>
+
 </body>
 </html>

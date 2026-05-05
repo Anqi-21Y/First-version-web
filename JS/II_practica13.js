@@ -1,10 +1,19 @@
 // 2. Comportamiento Dinámico con JavaScript 
 // 3. Validación con JavaScript (6 Puntos)
 
+let allowSubmit = false;
+
 document.addEventListener('DOMContentLoaded', ()=>{
-    event.preventDefault();
 
     const form = document.querySelector('form');
+    let formType = "";
+
+    // Determina que forma es
+    if (form.id === "adoptForm") {
+        formType = "adopt";
+    } else if (form.id === "volunForm") {
+        formType = "volunteer";
+    }
     const motivation = document.getElementById('motivation');
     const contador = document.getElementById('contador');
 
@@ -25,15 +34,21 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     // part 3
     form.addEventListener('submit', (event) =>{
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const password = document.getElementById('password').value;
+        
+        event.preventDefault();
+
+        const nameEl = document.getElementById('name');
+        const emailEl = document.getElementById('email');
+        const passwordEl = document.getElementById('password');
+
+        const name = nameEl ? nameEl.value : "";
+        const email = emailEl ? emailEl.value : "";
+        const password = passwordEl ? passwordEl.value : "";
 
         // examinar gmail
         const emailR = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if(!emailR.test(email)){
             alert("Error: Please provide a valid email address.");
-            event.preventDefault();// no enviar
             return;
         }
 
@@ -43,26 +58,30 @@ document.addEventListener('DOMContentLoaded', ()=>{
         // si no 
         if (!nameR.test(name)) {
             alert("Error: Your Name must start with an Uppercase letter (A-Z).");
-            event.preventDefault();
             return;
         }
 
         // password 
-        if(password.length <8){
-            alert("The Security Code must be at least 8 characters long.");
-            event.preventDefault();
-        }else if(!/[A-Z]/.test(password)){
-            alert("The code must contain at least one uppercase letter (A-Z).");
-            event.preventDefault();
-        }else if(!/[a-z]/.test(password)){
-            alert("The code must contain at least one lowercase letter (a-z).");
-            event.preventDefault();
-        }else if(!/[0-9]/.test(password)){
-            alert("The code must contain at least one number (0-9).");
-            event.preventDefault();
-        }else{
-            alert("Application submitted successfully! Please save your access code.");
-            form.submit();
+        if (formType === "adopt") {
+
+            if(password.length < 8){
+                alert("The Security Code must be at least 8 characters long.");
+                return;
+            }else if(!/[A-Z]/.test(password)){
+                alert("The code must contain at least one uppercase letter (A-Z).");
+                return;
+            }else if(!/[a-z]/.test(password)){
+                alert("The code must contain at least one lowercase letter (a-z).");
+                return;
+            }else if(!/[0-9]/.test(password)){
+                alert("The code must contain at least one number (0-9).");
+                return;
+            }
+
         }
+
+        alert("Application submitted successfully!");
+            // form.submit(); -> no ejecutar para que no mostrar 405
+            window.location.href = `success.html?type=${formType}`;
     });
 });

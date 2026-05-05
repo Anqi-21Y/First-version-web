@@ -177,7 +177,8 @@ label{
 input[type="text"],
 input[type="number"],
 input[type="email"],
-input[type="tel"]{
+input[type="tel"],
+textarea{
   padding:8px;
   border:2px solid var(--primary-light);
   width:100%;
@@ -285,7 +286,8 @@ input:focus{
   input[type="text"],
   input[type="number"],
   input[type="email"],
-  input[type="tel"]{
+  input[type="tel"],
+  textarea{
     padding:6px;
     font-size:0.9em;
   }

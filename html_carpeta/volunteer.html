@@ -81,7 +81,7 @@
         <section class="form_section">
             <h2 id="vol-form-title">Volunteer</h2>
 
-            <form action="#" method="post">
+            <form id="volunForm">
 
                 <fieldset>
 
@@ -104,7 +104,7 @@
                     </div>
 
                     <label for="age" id="vol-label-age">Age :</label>
-                    <input type="number" id="age" name="age" min="0" required>
+                    <input type="number" id="age" name="age" min="0" max="80" required>
 
                     <label for="email" id="vol-label-email">Email :</label>
                     <input type="email" id="email" name="email" required>
@@ -115,8 +115,11 @@
                     <label for="experience" id="vol-label-exp">Do you have experience with pets:</label>
                     <input type="text" id="experience" name="experience" required>
 
-                    <label for="day" id="vol-label-day">Which day you want :</label>
-                    <input type="text" id="day" name="day" required>
+                    <label for="motivation" id="vol-label-day">Why do you want to volunteer?</label>
+                    <textarea id="motivation" maxlength="200"></textarea>
+
+                    <span id="contador">0 / 200</span>
+
 
                 </fieldset>
 
@@ -131,11 +134,33 @@
 
     </main>
 
-    <!--footer-->
-    <iframe src="../html_carpeta/footer.html" frameborder="0"
-    style="display: block; width: 100%;height: 500px; border: none; margin: 0; padding:0;"></iframe>
+    <!-- Footer -->
+    <iframe id="footer-frame" src="../html_carpeta/footer.html" frameborder="0" style="display: block; width: 100%; border: none; margin: 0; padding: 0; height: 500px;"></iframe>
+
+    <script>
+    const iframe = document.getElementById('footer-frame');
+    
+    iframe.addEventListener('load', () => {
+        const resizeIframe = () => {
+        try {
+            const body = iframe.contentDocument.body;
+            const height = body.scrollHeight;
+            iframe.style.height = height + 'px';
+        } catch(e) {}
+        };
+
+        resizeIframe();
+
+        // Escuchar los cambios en el tamaño interno del iframe.
+        try {
+        const observer = new ResizeObserver(resizeIframe);
+        observer.observe(iframe.contentDocument.body);
+        } catch(e) {}
+    });
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="../JS/script.js"></script>
+    <script src="../JS/II_practica13.js"></script>
 </body>
 </html>

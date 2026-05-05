@@ -128,7 +128,7 @@ h1 {
   .nav_p {
     display: none;
     flex-direction: column;
-    background-color: var(--primary-light); /* #4BAF8E */
+    background-color: var(--primary);
     width: 100%;
     position: relative;
     top: 20px;

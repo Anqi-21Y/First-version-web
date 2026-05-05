@@ -285,7 +285,7 @@ $(document).ready(function () {
             "vol-label-email": "Email :",
             "vol-label-number": "Number :",
             "vol-label-exp": "Do you have experience with pets:",
-            "vol-label-day": "Which day you want :",
+            "vol-label-day": "Why do you want to volunteer? ",
 
             "vol-submit": "Submit",
 
@@ -308,7 +308,13 @@ $(document).ready(function () {
             "chart-label": "Adopted Pets",
             "chart-dogs": "Dogs",
             "chart-cats": "Cats",
-            "chart-others": "Others"
+            "chart-others": "Others",
+
+            "success-title": "Thank You!",
+            "success-message-adopt": "Your adoption application has been received. We will contact you soon 🐾",
+            "success-message-volunteer": "Thank you for applying as a volunteer! We will contact you soon ❤️",
+            "success-home": "Back to Home",
+            "success-adopt": "Adopt More Pets"
         },
 
         es: {
@@ -510,7 +516,7 @@ $(document).ready(function () {
             "vol-label-email": "Correo :",
             "vol-label-number": "Teléfono :",
             "vol-label-exp": "¿Tienes experiencia con mascotas?",
-            "vol-label-day": "¿Qué día quieres?",
+            "vol-label-day": "¿Por qué quieres ser voluntario?",
 
             "vol-submit": "Enviar",
 
@@ -533,7 +539,13 @@ $(document).ready(function () {
             "chart-label": "Mascotas Adoptadas",
             "chart-dogs": "Perros",
             "chart-cats": "Gatos",
-            "chart-others": "Otros"
+            "chart-others": "Otros",
+
+            "success-title": "¡Gracias!",
+            "success-message-adopt": "Hemos recibido tu solicitud de adopción. Nos pondremos en contacto contigo pronto 🐾",
+            "success-message-volunteer": "Gracias por apuntarte como voluntario. Nos pondremos en contacto contigo pronto ❤️",
+            "success-home": "Volver al inicio",
+            "success-adopt": "Adoptar más mascotas",
         },
 
         ca: {
@@ -735,7 +747,7 @@ $(document).ready(function () {
             "vol-label-email": "Correu :",
             "vol-label-number": "Telèfon :",
             "vol-label-exp": "Tens experiència amb mascotes?",
-            "vol-label-day": "Quin dia vols?",
+            "vol-label-day": "Per què vols fer voluntariat?",
 
             "vol-submit": "Enviar",
 
@@ -758,7 +770,13 @@ $(document).ready(function () {
             "chart-label": "Mascotes Adoptades",
             "chart-dogs": "Gossos",
             "chart-cats": "Gats",
-            "chart-others": "Altres"
+            "chart-others": "Altres",
+
+            "success-title": "Gràcies!",
+            "success-message-adopt": "Hem rebut la teva sol·licitud d'adopció. Ens posarem en contacte aviat 🐾",
+            "success-message-volunteer": "Gràcies per voler ser voluntari. Ens posarem en contacte aviat ❤️",
+            "success-home": "Tornar a l'inici",
+            "success-adopt": "Adoptar més mascotes"
         }
 
     };
