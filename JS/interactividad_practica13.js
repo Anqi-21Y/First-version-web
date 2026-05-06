@@ -72,6 +72,17 @@
 
         // raton hover
         document.querySelectorAll('.adopt_button').forEach(btn =>{
+            btn.addEventListener("click", (e) => {
+                e.preventDefault();
+                
+                document.querySelectorAll('.adopt_button').forEach(b => b.classList.remove('selected'));
+                btn.classList.add('selected');
+
+                setTimeout(() => {
+                    window.location.href = btn.getAttribute("href");
+                }, 400);
+            });
+        
             btn.addEventListener("mouseenter",()=>{
                 anime({
                     targets: btn,

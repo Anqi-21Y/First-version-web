@@ -554,44 +554,68 @@ section.cta h3 {
 /* RESPONSIVE ---------------------------------------------------- */
 @media (max-width: 768px) {
   main { 
-    padding: 30px 20px; 
+    padding: 20px 20px 30px;
   }
 
   section { 
-    padding: 50px 25px; 
-    margin-bottom: 50px; 
+    padding: 35px 20px; 
+    margin-bottom: 35px; 
     border-radius: 15px; 
   }
 
   .container { 
-    height: 50vh; 
-    min-height: 350px; 
+    height: auto;
+    min-height: 300px;
+    padding: 40px 20px; 
+  }
+
+  .container img {
+    object-position: center center;
   }
 
   .container 
   .text h2 { 
-    font-size: 2rem; 
+    font-size: 1.8rem; 
+  }
+
+  .container .text {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  #selector-idiomas {
+    top: auto;
+    right: 20px;
+    z-index: 900;
   }
 }
 
 @media (max-width: 480px) {
   main { 
-    padding: 20px 15px; 
+    padding: 15px 20px 15px; 
   }
 
   section { 
-    padding: 40px 20px; 
-    margin-bottom: 40px; 
+    padding: 30px 15px; 
+    margin-bottom: 30px; 
   }
 
   .container { 
-    height: 40vh; 
-    min-height: 300px; 
+    min-height: 250px;
+    padding: 40px 15px; 
   }
 
   .container 
   .text h2 { 
-    font-size: 1.5rem; 
+    font-size: 1.4rem; 
+  }
+
+  .container .text p {
+    font-size: 0.9rem;
+  }
+
+  .container img {
+    object-position: center center;
   }
 
   .card_container, 
@@ -600,10 +624,272 @@ section.cta h3 {
   }
 
   .pet_card img { 
-    height: 200px; 
+    height: 180px; 
   }
 
   .story img { 
-    height: 200px; 
+    height: 180px; 
   }
+}
+
+#addStory {
+  font-family: 'Poppins', sans-serif;
+  display: block;
+  margin: 20px auto 0;
+}
+
+/* STORY FORM ---------------------------------------------------- */
+#storyForm {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+ 
+#storyForm input,
+#storyForm textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  background: var(--white);
+  transition: var(--transition);
+}
+ 
+#storyForm input:focus,
+#storyForm textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(122,199,169,0.2);
+  outline: none;
+}
+ 
+#storyForm textarea {
+  min-height: 100px;
+  resize: none;
+}
+ 
+.custom-file-upload {
+  display: inline-block;
+  padding: 12px;
+  border-radius: 10px;
+  background: var(--secondary);
+  color: var(--text-dark);
+  cursor: pointer;
+  text-align: center;
+  font-weight: 600;
+  transition: var(--transition);
+}
+ 
+.custom-file-upload:hover {
+  background: var(--primary);
+  color: white;
+}
+
+
+/* dialog */
+.ui-dialog {
+  border: none !important;
+  border-radius: 20px !important;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.18) !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  font-family: 'Poppins', sans-serif !important;
+}
+ 
+
+.ui-dialog .ui-dialog-titlebar {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light)) !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 16px 20px !important;
+  font-weight: 600 !important;
+}
+ 
+.ui-dialog .ui-dialog-title {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 1.1rem !important;
+  color: white !important;
+}
+ 
+
+.ui-dialog .ui-dialog-titlebar-close {
+  display: none !important;
+}
+ 
+ 
+.ui-dialog .ui-dialog-content {
+  padding: 24px 20px !important;
+  background: var(--background) !important;
+  border: none !important;
+  font-family: 'Poppins', sans-serif !important;
+}
+ 
+
+.ui-dialog .ui-dialog-buttonpane {
+  border: none !important;
+  border-top: 1px solid rgba(0,0,0,0.06) !important;
+  padding: 14px 20px !important;
+  background: var(--background) !important;
+  margin: 0 !important;
+  display: flex !important;
+  justify-content: flex-end !important;
+  gap: 10px !important;
+}
+ 
+.ui-dialog .ui-dialog-buttonset {
+  display: flex !important;
+  gap: 10px !important;
+}
+ 
+.ui-dialog .ui-dialog-buttonpane button {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 0.9rem !important;
+  font-weight: 600 !important;
+  border: none !important;
+  border-radius: 10px !important;
+  padding: 10px 20px !important;
+  cursor: pointer !important;
+  transform: none !important;
+  transition: background 0.25s ease, box-shadow 0.25s ease, opacity 0.2s ease !important;
+}
+ 
+
+.ui-dialog .ui-dialog-buttonpane button:first-child {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light)) !important;
+  color: white !important;
+  box-shadow: var(--shadow-sm) !important;
+}
+ 
+.ui-dialog .ui-dialog-buttonpane button:first-child:hover {
+  background: linear-gradient(135deg, var(--primary-light), var(--primary-dark)) !important;
+  box-shadow: var(--shadow-md) !important;
+  transform: none !important;
+  opacity: 0.92 !important;
+}
+ 
+
+.ui-dialog .ui-dialog-buttonpane button:last-child {
+  background: #e0e0e0 !important;
+  color: var(--text-dark) !important;
+  box-shadow: none !important;
+}
+ 
+.ui-dialog .ui-dialog-buttonpane button:last-child:hover {
+  background: #d0d0d0 !important;
+  transform: none !important;
+}
+ 
+
+.ui-dialog .ui-dialog-buttonpane button:focus {
+  outline: 2px solid rgba(122,199,169,0.5) !important;
+  outline-offset: 2px !important;
+}
+ 
+
+.ui-dialog .ui-button.ui-state-hover,
+.ui-dialog .ui-button:hover {
+  transform: none !important;
+}
+
+
+/* DATEPICKER ---------------------------------------------------- */
+.ui-datepicker {
+  background: var(--background) !important;
+  border: none !important;
+  border-radius: 14px !important;
+  box-shadow: var(--shadow-md) !important;
+  padding: 12px !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 0.88rem !important;
+}
+
+/*top mes y anyo */
+.ui-datepicker-header {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light)) !important;
+  border: none !important;
+  border-radius: 10px !important;
+  color: white !important;
+  padding: 8px !important;
+  margin-bottom: 8px !important;
+}
+
+.ui-datepicker-title {
+  color: white !important;
+  font-weight: 600 !important;
+}
+
+/* mes y anyo */
+.ui-datepicker-title select {
+  background: rgba(255,255,255,0.25) !important;
+  border: none !important;
+  border-radius: 6px !important;
+  color: white !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 600 !important;
+  padding: 2px 6px !important;
+  cursor: pointer !important;
+}
+
+/* flecha iz y dere */
+.ui-datepicker-prev,
+.ui-datepicker-next {
+  background: transparent !important;
+  border: none !important;
+  cursor: pointer !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+}
+
+.ui-datepicker-prev .ui-icon,
+.ui-datepicker-next .ui-icon {
+  display: none !important;
+}
+
+.ui-datepicker-prev::before { content: "‹" !important; color: white !important; font-size: 20px !important; font-weight: bold !important; }
+.ui-datepicker-next::before { content: "›" !important; color: white !important; font-size: 20px !important; font-weight: bold !important; }
+
+/* semana Su Mo Tu... */
+.ui-datepicker th {
+  color: var(--primary-dark) !important;
+  font-weight: 600 !important;
+  font-size: 0.78rem !important;
+  padding: 6px 0 !important;
+}
+
+/* numero de date */
+.ui-datepicker td {
+  padding: 2px !important;
+}
+
+.ui-datepicker td a,
+.ui-datepicker td span {
+  background: transparent !important;
+  border: none !important;
+  border-radius: 8px !important;
+  color: var(--text-dark) !important;
+  font-family: 'Poppins', sans-serif !important;
+  text-align: center !important;
+  padding: 5px !important;
+  transition: background 0.2s !important;
+  display: block !important;
+}
+
+.ui-datepicker td a:hover {
+  background: var(--secondary) !important;
+  color: var(--text-dark) !important;
+}
+
+
+.ui-datepicker .ui-datepicker-today a {
+  background: rgba(122,199,169,0.2) !important;
+  color: var(--primary-dark) !important;
+  font-weight: 700 !important;
+}
+
+/* select date */
+.ui-datepicker .ui-state-active {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light)) !important;
+  color: white !important;
+  font-weight: 700 !important;
 }

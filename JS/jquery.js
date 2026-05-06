@@ -31,16 +31,82 @@ $(document).ready(function() {
     // Primero, agregue dinámicamente un botón "Agregar historia" en una ubicación adecuada en la página.
 
     $("#addStory").on("click", function(){
-        const newStory = `
-            <div class="story" style="display:none;">
-                <div class="story-content">
-                    <p><strong>New Friend</strong></p>
-                    <p>Recently Adopted!</p>
-                    <button class="btn btn-outline deleteStory" style="color: red;">Delete Story</button>
-                </div>
-            </div>`;
-            $(".stories_container").append(newStory); // append
-            $(".story").last().fadeIn();//Combinado con la animación de la Tarea 4
+        const formHtml = `
+            <div id="storyForm">
+                <input type="text" id="storyName" placeholder="Pet name" style="width:100%; margin-bottom:10px;">
+                <input type="text" id="storyDate">
+                <input type="text" id="storyAuthor" placeholder="Author" style="width:100%; margin-bottom:10px;">
+                <textarea id="storyText" placeholder="Write the story..." style="width:100%; margin-bottom:10px;"></textarea>
+                <label for="storyImage" class="custom-file-upload">Choose Photo</label>
+                <input type="file" id="storyImage" accept="image/*" capture="environment" hidden>
+            </div>
+        `;
+
+        $(formHtml).dialog({
+            title: "Add New Story 🐾",
+            modal: true,
+            width: 400,
+
+            open: function() {
+                $("#storyDate").datepicker({
+                    dateFormat: "MM yy",
+                    changeMonth: true,
+                    changeYear: true
+                });
+            },
+
+            buttons: {
+                "Add Story": function(){
+
+                    const name = $("#storyName").val();
+                    const date = $("#storyDate").val();
+                    const author = $("#storyAuthor").val();
+                    const text = $("#storyText").val();
+                    const file = $("#storyImage")[0].files[0];
+
+                    if(!name || !date || !author){
+                        alert("Please fill required fields!");
+                        return;
+                    }
+
+                    // ejecutar img
+                    const reader = new FileReader();
+
+                    reader.onload = function(e){
+
+                        const newStory = `
+                            <div class="story" style="display:none;">
+                                <img src="${e.target.result}" alt="${name}">
+                                <div class="story-content">
+                                    <p class="story-names"><strong>${name}</strong></p>
+                                    <p class="story-date">Adopted: ${date}</p>
+                                    <p class="story-author">— ${author}</p>
+                                    <p>${text}</p>
+                                    <button class="btn btn-outline deleteStory" style="color:red;">Delete</button>
+                                </div>
+                            </div>
+                        `;
+
+                        $(".stories_container").append(newStory);
+                        $(".story").last().fadeIn();
+                    };
+
+                    if(file){
+                        reader.readAsDataURL(file);
+                    } else {
+                        // no hay img tabien puede submit
+                        reader.onload({ target: { result: "../imag_carpeta/default.jpg" }});
+                    }
+
+                    $(this).dialog("close");
+                },
+
+                "Cancel": function(){
+                    $(this).dialog("close");
+                }
+            }
+        });
+
     });
 
     // Delefated events

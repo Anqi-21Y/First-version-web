@@ -1,4 +1,4 @@
-// ===== HEADER HAMBURGER =====
+// ---- HEADER HAMBURGER ----
 
 const menuIcon = document.getElementById('menuIcon');
 const navLinks = document.getElementById('navLinks');
@@ -25,7 +25,7 @@ if (menuIcon) {
 window.addEventListener('load', updateParentHeight);
 
 
-// ===== Header Resize (applies to all pages safely) =====
+// ---- Header Resize (applies to all pages safely) ----
 
 window.addEventListener('message', (event) => {
 
@@ -41,7 +41,7 @@ window.addEventListener('message', (event) => {
 
 });
 
-/* ===== AUDIO CONTROL (Adopt page) ===== */
+/* ---- AUDIO CONTROL (Adopt page) ---- */
 
 document.addEventListener('DOMContentLoaded', () => {
 
