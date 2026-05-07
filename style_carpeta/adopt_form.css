@@ -47,8 +47,6 @@ main{
     z-index: 999;
 }
 
-/* Idioma actual */
-
 .lang-selected{
     background: var(--white);
     color: var(--text-dark);
@@ -64,8 +62,6 @@ main{
     box-shadow: var(--shadow-md);
 }
 
-/* Menú desplegable */
-
 .lang-options{
     display: none;
     flex-direction: column;
@@ -76,13 +72,9 @@ main{
     overflow: hidden;
 }
 
-/* hover abrir */
-
 #selector-idiomas:hover .lang-options{
     display: flex;
 }
-
-/* cada boton */
 
 .lang-options button{
     border: none;
@@ -183,12 +175,14 @@ main{
 /*form section*/
 .form_section{
   width: 900px;
-  margin: 0 auto ;
+  max-width: 100%;        /* ← FIX: nunca supera el ancho del contenedor */
+  margin: 0 auto;
   background:linear-gradient(135deg,var(--white) 0%,var(--volunteer-bg) 100%);
   padding:30px;
   border-radius:var(--radius-section);
   box-shadow:var(--shadow-md);
   border-top:4px solid var(--accent);
+  box-sizing: border-box;  /* ← FIX: padding no suma al ancho */
 }
 
 .form_section h2{
@@ -259,6 +253,8 @@ fieldset{
   border-radius:var(--radius-section);
   padding:25px;
   background:linear-gradient(135deg,var(--adopt-bg) 0%,rgba(255,255,255,0.7) 100%);
+  min-width: 0;            /* ← FIX: permite que fieldset se encoja */
+  box-sizing: border-box;  /* ← FIX: padding no suma al ancho */
 }
 
 legend{
@@ -317,7 +313,6 @@ legend{
   }
 }
 
-
 /*Diseño adaptable de mobiles*/
 @media (max-width: 480px) {
   main {
@@ -343,6 +338,7 @@ legend{
   label {
     font-size: 0.95em;
   }
+
   input[type="text"],
   input[type="number"],
   input[type="email"],
@@ -361,21 +357,17 @@ legend{
 
 /*1. Pseudoclases de estado */
 
-/* 1.1 Cambio de color del borde al recibir el foco */
 input:focus,textarea:focus{
   outline: none;
   border: 2px solid var(--primary);
   background-color: #f0fdf4;
 }
 
-/* 1.2 Uso de HTML5 para validar el coloreado de estados */
-/*Si es valido = green*/
 input:valid:not(:placeholder-shown), 
 textarea:valid:not(:placeholder-shown) {
     border: 2px solid #2ecc71;
 }
 
-/*si no = red*/
 input:invalid, 
 textarea:invalid {
     border: 2px solid #e74c3c;
@@ -387,7 +379,6 @@ textarea:invalid {
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-/* Estilo de contador */
 #contador {
     display: block;
     text-align: right;
