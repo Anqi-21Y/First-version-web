@@ -25,26 +25,5 @@
 
 </div>
 </header>
-<script>
-const menuIcon = document.getElementById('menuIcon');
-const navLinks = document.getElementById('navLinks');
 
-function updateParentHeight() {
-    const header = document.querySelector('header');
-    if (!header) return;
-    const headerHeight = header.offsetHeight;
-    window.parent.postMessage({
-        type: 'resizeHeader',
-        height: headerHeight
-    }, '*');
-}
-
-if (menuIcon) {
-    menuIcon.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-        updateParentHeight();
-    });
-}
-
-window.addEventListener('load', updateParentHeight);
-</script>
+<script src="../js/script.js"></script>
